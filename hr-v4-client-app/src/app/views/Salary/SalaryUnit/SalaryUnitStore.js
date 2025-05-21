@@ -1,0 +1,224 @@
+import { makeAutoObservable } from "mobx";
+import { deleteMultiple , deleteSalaryUnit , getById , pagingSalaryUnit , saveSalaryUnit , } from "./SalaryUnitService";
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
+import i18n from "i18n";
+import localStorageService from "app/services/localStorageService";
+
+toast.configure({
+    autoClose:2000 ,
+    draggable:false ,
+    limit:3 ,
+});
+
+export default class SalaryUnitStore {
+    searchObject = {
+        pageIndex:1 ,
+        pageSize:10 ,
+        keyword:null ,
+    };
+    totalElements = 0;
+    totalPages = 0;
+    listSalaryUnit = [];
+    openCreateEditPopup = false;
+    selectedSalaryUnit = null;
+    openConfirmDeletePopup = false;
+    openConfirmDeleteListPopup = false;
+    listOnDelete = [];
+    openViewPopup = false;
+
+    handleOpenView = async (salaryUnitId) => {
+        try {
+            if (salaryUnitId) {
+                const {data} = await getById(salaryUnitId);
+                this.selectedSalaryUnit = data;
+            } else {
+                this.selectedSalaryUnit = {
+                    ... this.initialSalaryUnit
+                };
+            }
+
+            this.openViewPopup = true;
+        } catch (error) {
+            console.error(error);
+            toast.error(i18n.t("toast.error"));
+        }
+    };
+
+
+    constructor() {
+        makeAutoObservable(this);
+    }
+
+    resetStore = () => {
+        this.searchObject = {
+            pageIndex:1 ,
+            pageSize:10 ,
+            keyword:null ,
+        };
+        this.totalElements = 0;
+        this.totalPages = 0;
+        this.listSalaryUnit = [];
+        this.openCreateEditPopup = false;
+        this.selectedSalaryUnit = null;
+        this.openConfirmDeletePopup = false;
+        this.openConfirmDeleteListPopup = false;
+        this.listOnDelete = [];
+        this.openViewPopup = false;
+
+    }
+
+    handleSetSearchObject = (searchObject) => {
+        this.searchObject = {... searchObject};
+    }
+
+    pagingSalaryUnit = async () => {
+        try {
+            const loggedInStaff = localStorageService.getLoginUser();
+            const payload = {
+                ... this.searchObject ,
+                organizationId:loggedInStaff?.user?.org?.id
+            };
+            const data = await pagingSalaryUnit(payload);
+
+            this.listSalaryUnit = data.data.content;
+            this.totalElements = data.data.totalElements;
+            this.totalPages = data.data.totalPages;
+
+        } catch (error) {
+            console.error(error);
+            toast.error(i18n.t("toast.error"));
+        }
+    };
+
+    setPageIndex = async (page) => {
+        this.searchObject.pageIndex = page;
+
+        await this.pagingSalaryUnit();
+    };
+
+    setPageSize = async (event) => {
+        this.searchObject.pageSize = event.target.value;
+        this.searchObject.pageIndex = 1;
+
+        await this.pagingSalaryUnit();
+    };
+
+    handleChangePage = async (event , newPage) => {
+        await this.setPageIndex(newPage);
+    };
+
+    handleSelectListDelete = (deleteSalaryUnits) => {
+        this.listOnDelete = deleteSalaryUnits;
+    };
+
+    getById = async (salaryUnitId) => {
+        try {
+            const {data} = await getById(salaryUnitId);
+            this.selectedSalaryUnit = data;
+            this.openCreateEditPopup = true;
+        } catch (error) {
+            console.error(error);
+            toast.error(i18n.t("toast.error"));
+        }
+    };
+
+    handleClose = () => {
+        this.openConfirmDeletePopup = false;
+        this.openCreateEditPopup = false;
+        this.openConfirmDeleteListPopup = false;
+        this.openViewPopup = false;
+    };
+
+    handleDelete = (salaryUnit) => {
+        this.selectedSalaryUnit = {... salaryUnit};
+        this.openConfirmDeletePopup = true;
+    };
+
+    handleDeleteList = () => {
+        this.openConfirmDeleteListPopup = true;
+    };
+
+    initialSalaryUnit = {
+        id:null ,
+        code:null ,
+        name:null ,
+        manDays:null
+    }
+
+    handleOpenCreateEdit = async (salaryUnitId) => {
+        try {
+            if (salaryUnitId) {
+                const {data} = await getById(salaryUnitId);
+                this.selectedSalaryUnit = data;
+            } else {
+                this.selectedSalaryUnit = {
+                    ... this.initialSalaryUnit
+                };
+            }
+
+            this.openCreateEditPopup = true;
+        } catch (error) {
+            console.error(error);
+            toast.error(i18n.t("toast.error"));
+        }
+    };
+
+    handleConfirmDelete = async () => {
+        try {
+            const {data} = await deleteSalaryUnit(this?.selectedSalaryUnit?.id);
+            toast.success(i18n.t("toast.delete_success"));
+
+            await this.pagingSalaryUnit();
+
+            this.handleClose();
+
+        } catch (error) {
+            console.error(error);
+            toast.error(i18n.t("toast.error"));
+        }
+    };
+
+    handleConfirmDeleteList = async () => {
+        try {
+            const deleteData = [];
+
+            for (let i = 0; i < this?.listOnDelete?.length; i++) {
+                deleteData.push(this?.listOnDelete[i]?.id);
+            }
+
+            // console.log("deleteData", deleteData)
+            await deleteMultiple(deleteData);
+            toast.success(i18n.t("toast.delete_success"));
+
+            await this.pagingSalaryUnit();
+            this.listOnDelete = [];
+
+            this.handleClose();
+
+
+        } catch (error) {
+            console.error(error);
+            toast.error(i18n.t("toast.error"));
+        }
+    };
+
+    saveSalaryUnit = async (salaryUnit) => {
+        try {
+            const {data} = await saveSalaryUnit(salaryUnit);
+            toast.success("Thông tin Đơn vị thời gian tính lương đã được lưu");
+            this.handleClose();
+        } catch (error) {
+            console.error(error);
+            if (error.response.status == 409) {
+                toast.error(i18n.t("toast.duplicate_code") , {
+                    autoClose:5000 ,
+                    draggable:false ,
+                    limit:5 ,
+                });
+            } else {
+                toast.error(i18n.t("toast.error"));
+            }
+        }
+    };
+}

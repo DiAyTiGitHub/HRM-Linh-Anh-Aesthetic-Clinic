@@ -1,0 +1,7 @@
+{
+  "realm": "EMR",
+  "auth-server-url": "https://sso.smarthospital247.com/auth",
+  "ssl-required": "none",
+  "resource": "HrClient",
+  "public-client": true
+}

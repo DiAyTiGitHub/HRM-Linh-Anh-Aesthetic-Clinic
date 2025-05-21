@@ -1,0 +1,19 @@
+@for $i from 0 through 50 {
+  $value: $i * 0.25rem;
+
+  .gap-#{$i} {
+    gap: $value !important;
+  }
+
+  .row-gap-#{$i} {
+    row-gap: $value !important;
+  }
+}
+
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+.self-end {
+  align-self: flex-end;
+}

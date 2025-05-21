@@ -1,0 +1,58 @@
+.calendar-month {
+  th,
+  td {
+    border: 2px solid #d5e5f2;
+    font-size: 15px;
+  }
+
+  .weeks-header {
+    padding: 7px 0;
+    color: #7c8da6;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f2f7fb;
+    border-bottom-width: 3px;
+  }
+
+  .date {
+    padding: 5px;
+    height: 90px;
+    vertical-align: baseline;
+    cursor: pointer;
+    overflow: hidden;
+
+    p {
+      text-align: right;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    &.today-date {
+      background-color: #fcf8df;
+    }
+
+    &.date-off-range {
+      opacity: 0.3;
+    }
+
+    &:hover {
+      background-color: aliceblue !important;
+    }
+  }
+
+  @include media($media-sm) {
+    .calendar-form {
+      flex-direction: column-reverse;
+      row-gap: 10px;
+      align-items: center;
+
+      .btn-group:first-child {
+        align-self: flex-end;
+      }
+
+      .btn-group:last-child {
+        align-self: flex-start;
+      }
+    }
+  }
+}

@@ -1,0 +1,187 @@
+.shiftWorkTicket {
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  margin: 4.8px 2.4px 0;
+  padding: 2.4px 2px 2.4px 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px;
+  background-color: #fffff2;
+  border-left: 4px solid #fff;
+
+  .cardCode {
+    // font-size: 13px;
+    color: #0060ff;
+    margin: unset !important;
+    // max-width: 202px;
+    // margin-bottom: 2px !important;
+    font-size: 12px;
+  }
+
+  .cardAttribute {
+    // padding-right: 6px;
+    // font-size: 13.4px;
+    // padding-top: 2px;
+    margin: unset !important;
+    // max-width: 202px;
+    font-size: 12px;
+
+    &>b {
+      opacity: 0.7;
+    }
+  }
+
+  .moreIcon {
+    opacity: 0.6;
+    font-size: 16px;
+    transition: all linear 0.1s;
+    // padding: 2px;
+    padding-top: 0px;
+  }
+
+  .moreIcon:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .card-name {
+    overflow: hidden;
+    // text-overflow: ellipsis;
+    // font-size: 14.2px;
+    text-wrap: pretty;
+    // max-width: 202px;
+    font-size: 12px;
+  }
+
+  h5 {
+    font-size: 20px;
+    margin: 2px 0;
+  }
+
+  p {
+    margin: 6px 0 0px;
+  }
+
+  .card-project {
+    // background-color: #d5e4eb;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .card-priority {
+    display: inline-block;
+    margin-bottom: 0;
+
+    &>span {
+      color: white;
+      padding: 3px;
+      border-radius: 3px;
+    }
+  }
+}
+
+
+.monthCalendarTicket {
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  margin: 4.8px 2.4px 0;
+  padding: 2.4px 2px 2.4px 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px;
+  background-color: #fffff2;
+  border-left: 4px solid #fff;
+
+  .cardCode {
+    // font-size: 13px;
+    color: #0060ff;
+    margin: unset !important;
+    // max-width: 202px;
+    // margin-bottom: 2px !important;
+    font-size: 12px;
+  }
+
+  .cardAttribute {
+    // padding-right: 6px;
+    // font-size: 13.4px;
+    // padding-top: 2px;
+    margin: unset !important;
+    // max-width: 202px;
+    font-size: 12px;
+
+    &>b {
+      opacity: 0.7;
+    }
+  }
+
+  .moreIcon {
+    opacity: 0.6;
+    font-size: 16px;
+    transition: all linear 0.1s;
+    // padding: 2px;
+    padding-top: 0px;
+  }
+
+  .moreIcon:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .card-name {
+    overflow: hidden;
+    // text-overflow: ellipsis;
+    // font-size: 14.2px;
+    text-wrap: pretty;
+    // max-width: 202px;
+    font-size: 12px;
+  }
+
+  h5 {
+    font-size: 20px;
+    margin: 2px 0;
+  }
+
+  p {
+    margin: 6px 0 0px;
+  }
+
+  .card-project {
+    // background-color: #d5e4eb;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .card-priority {
+    display: inline-block;
+    margin-bottom: 0;
+
+    &>span {
+      color: white;
+      padding: 3px;
+      border-radius: 3px;
+    }
+  }
+}
+
+.work-calendar-cell {
+  position: relative;
+
+  &:hover {
+    .addMoreShiftButton {
+      opacity: 1;
+
+    }
+  }
+
+  .addMoreShiftButton {
+    opacity: 0;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: opacity 0.2s ease;
+    z-index: 1;
+    background-color: rgb(29, 85, 149);
+
+    &:hover {
+      background-color: rgba(34, 89, 177, 0.9);
+    }
+  }
+}

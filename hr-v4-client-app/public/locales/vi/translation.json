@@ -1,0 +1,1523 @@
+﻿{
+  "web_site": "Hr-v4",
+  "Dashboard": {
+    "dashboard": "Dashboard",
+    "AdministrativeUnit": "Đơn vị hành chính",
+    "login": "Đăng nhập",
+    "logout": "Đăng xuất",
+    "profile": "Hồ sơ",
+    "analytics": {
+      "title": "Thống kê"
+    },
+    "chart": {
+      "amount": "Số lượng"
+    }
+  },
+  "evaluationItem": {
+    "title": "Tiêu chí đánh giá",
+    "name": "Tên tiêu chí",
+    "code": "Mã tiêu chí",
+    "description": "Mô tả",
+    "type": "Loại tiêu chí"
+  },
+  "evaluationTemplate": {
+    "title": "Mẫu đánh giá",
+    "name": "Tên mẫu đánh giá",
+    "code": "Mã mẫu đánh giá",
+    "description": "Mô tả mẫu đánh giá",
+    "type": "Loại mẫu đánh giá"
+  },
+  "contentTemplate": {
+    "title": "Quản lý mẫu",
+    "name": "Tiêu đề",
+    "code": "Mã mẫu",
+    "description": "Nội dung",
+    "type": "Loại mẫu"
+  },
+  "staffWorkingHistory": {
+    "title": "Lịch sử công tác",
+    "startDate": "Ngày bắt đầu",
+    "endDate": "Ngày kết thúc",
+    "fromOrganization": "Từ Tổ chức",
+    "toOrganization": "Đến Tổ chức",
+    "fromDepartment": "Từ Phòng ban",
+    "toDepartment": "Đến Phòng ban",
+    "fromPosition": "Từ Vị trí",
+    "toPosition": "Đến Vị trí",
+    "transferType": "Loại điều chuyển",
+    "note": "Ghi chú"
+  },
+  "validation": {
+    "code": "Chưa nhập mã!",
+    "value": "Chưa nhập giá trị!",
+    "required": "Đây là trường bắt buộc",
+    "name": "Chưa nhập tên!",
+    "email": "Chưa nhập email!",
+    "confirm_password": "Mật khẩu không trùng khớp!",
+    "idNumberInvalid": "Số CMND/CCCD chưa đúng định dạng!",
+    "idNumber": "CMND/CCCD chỉ được nhập chữ số!",
+    "socialInsuranceNumberMatches": "Số BHXH chỉ được nhập số!",
+    "socialInsuranceNumberInvalid": "Số BHXH chưa đúng định dạng!",
+    "errorPhoneNumber": "SĐT không đúng định dạng",
+    "typePhoneNumber": "SĐT chỉ nhập ký tự là số",
+    "invalidDate": "Định dạng ngày chưa đúng!"
+  },
+  "color": {
+    "title": "Màu sắc",
+    "code": "Mã",
+    "value": "Giá trị",
+    "placehoderCode": "Nhập mã của màu sắc",
+    "placehoderValue": "Nhập giá trị của màu sắc"
+  },
+  "label": {
+    "name": "Tên"
+  },
+  "academic": {
+    "title": "Học Hàm ",
+    "titleLower": "học hàm ",
+    "code": "Mã",
+    "value": "Giá trị",
+    "name": "Tên",
+    "placehoderCode": "Nhập mã của ",
+    "placehoderName": "Nhập tên của "
+  },
+  "civilServantType": {
+    "title": "Phân loại công chức",
+    "code": "Mã",
+    "name": "Tên",
+    "languageKey": "Ngôn ngữ"
+  },
+  "contractType": {
+    "title": "Loại hợp đồng",
+    "code": "Mã",
+    "name": "Tên",
+    "languageKey": "Ngôn ngữ"
+  },
+  "employeeStatus": {
+    "title": "Trạng thái nhân viên",
+    "code": "Mã",
+    "name": "Tên",
+    "languageKey": "Ngôn ngữ"
+  },
+  "location": {
+    "title": "Vị trí",
+    "code": "Mã",
+    "name": "Tên",
+    "longitude": "Kinh độ",
+    "latitude": "Vĩ độ"
+  },
+  "reward": {
+    "title": "Hình thức khen thưởng",
+    "name": "Tên",
+    "languageKey": "Ngôn ngữ",
+    "code": "Mã",
+    "rewardType": "Loại khen thưởng",
+    "formal": "Hình thức",
+    "description": "Mô tả",
+    "evaluateYear": "Đánh giá năm",
+    "evaluateLevel": "Đánh giá mức độ"
+  },
+  "ethnics": {
+    "title": "Dân tộc",
+    "code": "Mã",
+    "value": "Giá trị",
+    "name": "Tên",
+    "description": "Mô tả",
+    "placehoderCode": "Nhập mã của dân tộc",
+    "placehoderName": "Nhập tên của dân tộc",
+    "placehoderDescription": "Nhập mô tả của dân tộc"
+  },
+  "religion": {
+    "title": "Tôn giáo",
+    "code": "Mã",
+    "value": "Giá trị",
+    "name": "Tên",
+    "description": "Mô tả",
+    "placehoderCode": "Nhập mã của tôn giáo",
+    "placehoderName": "Nhập tên của tôn giáo",
+    "placehoderDescription": "Nhập mô tả của tôn giáo"
+  },
+  "country": {
+    "title": "Quốc gia",
+    "code": "Mã",
+    "value": "Giá trị",
+    "name": "Tên",
+    "description": "Mô tả",
+    "placehoderCode": "Nhập mã của quốc gia",
+    "placehoderName": "Nhập tên của quốc gia",
+    "placehoderDescription": "Nhập mô tả của quốc gia"
+  },
+  "otherLanguage": {
+    "title": "Ngoại ngữ khác",
+    "code": "Mã",
+    "value": "Giá trị",
+    "name": "Tên"
+  },
+  "staff": {
+    "title": "Nhân viên",
+    "all": "Tất cả",
+    "working": "Đang làm việc",
+    "quitJob": "Nghỉ việc",
+    "unpaidleave": "Nghỉ không lương",
+    "code": "Mã",
+    "value": "Giá trị",
+    "name": "Tên",
+    "birthDate": "Ngày sinh",
+    "birthPlace": "Nơi sinh",
+    "description": "Mô tả",
+    "placehoderCode": "Nhập mã của quốc gia",
+    "placehoderName": "Nhập tên của quốc gia",
+    "placehoderDescription": "Nhập mô tả của quốc gia",
+    "personCertificate": "Danh sách chứng chỉ",
+    "officialMembers": "Thành viên chính thức",
+    "expertAdvice": "Chuyên gia tư vấn",
+    "intern": "Sinh viên thực tập"
+  },
+  "position": {
+    "title": "Vị trí",
+    "code": "Mã",
+    "value": "Giá trị",
+    "name": "Tên",
+    "type": "Loại vị trí",
+    "description": "Mô tả",
+    "placehoderCode": "Nhập mã của vị trí",
+    "placehoderName": "Nhập tên của vị trí",
+    "placehoderDescription": "Nhập mô tả của vị trí"
+  },
+  "humanResourcesInformation": {
+    "allowance": "Phụ cấp nhân viên",
+    "manipulation": "Thao tác",
+    "title": "Quản lý thông tin NV",
+    "profileInformation": "Thông tin hồ sơ NV",
+    "personalInformation": "Thông tin cá nhân",
+    "accountInformation": "Thông tin tài khoản",
+    "workingProcess": "Quá trình vị trí",
+    "civilServantRankProcess": "Quá trình ngạch công chức",
+    "salaryDevelopments": "Diễn biến lương",
+    "relatives": "Quan hệ thân nhân",
+    "politicalOrganization": "Tổ chức chính trị",
+    "saveStaff": "Thêm",
+    "staffCode": "Tên tài khoản",
+    "userName": "Tên tài khoản",
+    "name": "Họ và tên",
+    "code": "Mã nhân viên",
+    "birthDate": "Ngày sinh",
+    "birthPlace": "Quê quán",
+    "permanentResidence": "Chi tiết thường trú",
+    "accommodationToday": "Tạm trú",
+    "identityCardNumber": "Số CMND",
+    "dateRange": "Ngày cấp CMND",
+    "licensePlace": "Nơi cấp CMND",
+    "personalIdentificationNumber": "Số CCCD",
+    "personalIdentificationIssueDate": "Ngày cấp CCCD",
+    "personalIdentificationIssuePlace": "Nơi cấp CCCD",
+    "religion": "Tôn giáo",
+    "province": "Quê quán tỉnh",
+    "district": "Quận huyện",
+    "wards": "Phường xã",
+    "ethnic": "Dân tộc",
+    "phoneNumber": "Số điện thoại",
+    "maritalStatus": "Tình trạng hôn nhân",
+    "email": "Email",
+    "nationality": "Quốc tịch",
+    "contractType": "Loại hợp đồng",
+    "dayContract": "Ngày hợp đồng",
+    "professionalTitles": "Chức danh chuyên môn",
+    "assignedWork": "Công việc được giao",
+    "recruitmentDate": "Ngày vào",
+    "civilServantCategory": "Ngạch công chức",
+    "civilServantGrade": "Cấp bậc chuyên môn",
+    "staffType": "Loại nhân viên",
+    "highestPosition": "Vị trí cao nhất",
+    "positionDecisionNumber": "Số quyết định vị trí",
+    "currentAgencyDate": "Ngày về cơ quan hiện tại",
+    "occupationWhenRecruiting": "Công việc hiện tại",
+    "allowanceCoefficient": "Hệ số phụ cấp",
+    "salary": "Bậc lương",
+    "coefficientsSalary": "Hệ số lương",
+    "currentWorkingStatus": "Trạng thái công việc hiện tại",
+    "socialInsuranceNumber": "Số BHXH",
+    "fromDate": "Từ ngày",
+    "toDate": "Đến ngày",
+    "coefficient": "Hệ số",
+    "positionCode": "Mã vị trí",
+    "positionName": "Tên vị trí",
+    "currentPosition": "Vị trí hiện tại",
+    "mainPosition": "Vị trí chính",
+    "department": "Đơn vị",
+    "civilServantCategoryGradeCode": "Mã ngạch công chức",
+    "civilServantCategoryGradeName": "Tên ngạch công chức",
+    "currentCivilServantCategoryGrade": "Ngạch công chức hiện tại",
+    "firstName": "Họ",
+    "lastName": "Tên",
+    "agreements": "Hợp đồng",
+    "familyRelationships": "Quan hệ thân nhân",
+    "educationHistory": "Quá trình đào tạo",
+    "insuranceHistory": "Quá trình đóng BHXH",
+    "overseasWorkHistory": "Quá trình công tác nước ngoài",
+    "rewardHistory": "Quá trình khen thưởng",
+    "maternityHistory": "Quá trình thai sản",
+    "trainingHistory": "Quá trình bồi dưỡng",
+    "workingHistory": "Quá trình công tác",
+    "allowanceHistory": "Quá trình phụ cấp",
+    "positionHistory": "Quá trình chức vụ",
+    "allowanceSeniorityHistory": "Quá trình phụ cấp thâm niên nghề giáo",
+    "relationship": "Quan hệ",
+    "profession": "Nghề nghiệp",
+    "address": "Địa chỉ",
+    "description": "Mô tả",
+    "nameAgreement": "Tên hợp đồng",
+    "codeAgreement": "Mã hợp đồng",
+    "fileAgreement": "File",
+    "startDate": "Ngày bắt đầu",
+    "endDate": "Ngày kết thúc",
+    "signedDate": "Ngày thiết lập",
+    "agreementStatus": "Trạng thái",
+    "schoolName": "Tên trường",
+    "note": "Ghi chú",
+    "salaryPeriod": "Kỳ lương",
+    "salaryResult": "Dữ liệu từ",
+    "totalInsuranceAmount": "Tổng tiền",
+    "paidStatus": "Trạng thái",
+    "salaryCoefficient": "Hệ số lương đóng bảo hiểm xã hội",
+    "insuranceSalary": "Mức lương đóng bảo hiểm xã hội",
+    "staffHealthInsurancePercentage": "Tỷ lệ cá nhân đóng bảo hiểm y tế",
+    "orgHealthInsurancePercentage": "Tỷ lệ đơn vị đóng bảo hiểm y tế",
+    "staffUnemploymentInsurancePercentage": "Tỷ lệ cá nhân đóng bảo hiểm thất nghiệp",
+    "orgUnemploymentInsurancePercentage": "Tỷ lệ đơn vị đóng bảo hiểm thất nghiệp",
+    "staffHealthInsuranceAmount": "Số tiền cá nhân đóng bảo hiểm y tế",
+    "orgHealthInsuranceAmount": "Số tiền đơn vị đóng bảo hiểm y tế",
+    "staffUnemploymentInsuranceAmount": "Số tiền cá nhân đóng bảo hiểm thất nghiệp",
+    "orgUnemploymentInsuranceAmount": "Số tiền đơn vị đóng bảo hiểm thất nghiệp",
+    "staffPercentage": "Tỷ lệ cá nhân đóng bảo hiểm xã hội",
+    "orgPercentage": "Tỷ lệ đơn vị đóng bảo hiểm xã hội",
+    "staffInsuranceAmount": "Số tiền cá nhân đóng",
+    "orgInsuranceAmount": "Số tiền đơn vị đóng",
+    "stafInsuranceHistory": "Quá trình đóng bảo hiển xã hội",
+    "labourAgreementType": "Loại thỏa thuận lao động",
+    "educationHistoryTitle": "Quá trình đào tạo",
+    "salaryHistory": "Quá trình lương",
+    "academicLevel": "Trình độ học vấn",
+    "staffTypeCode": "Mã loại nhân viên",
+    "coefficientOverLevel": "Tỉ lệ vượt khung",
+    "percentage": "Tỉ lệ % thưởng",
+    "decisionDate": "Ngày quyết định tăng lương",
+    "decisionCode": "Số quyết định tăng lương",
+    "salaryIncrementType": "Loại tăng lương",
+    "jobCode": "Mã công việc",
+    "receivedDate": "Ngày nhận",
+    "rewardDate": "Ngày hưởng",
+    "politicalTheoryLevel": "Trình độ lí luận chính trị",
+    "stateManagementLevel": "Trình độ quản lí nhà nước",
+    "educationalManagementLevel": "Trình độ quản lí giáo dục",
+    "computerSkill": "Trình độ tin học",
+    "englishLevel": "Trình độ tiếng anh",
+    "graduationYear": "Năm tốt nghiệp",
+    "englishCertificate": "Chứng chỉ tiếng anh",
+    "certificationScore": "Điểm",
+    "yearOfCertification": "Năm cấp chứng chỉ",
+    "otherLanguage": "Ngoại ngữ khác",
+    "otherLanguageLevel": "Trình độ ngoại ngữ khác",
+    "ethnicLanguage": "Tiếng dân tộc",
+    "certificateEthnicLanguage": "Chứng chỉ tiếng dân tộc",
+    "exercise": "Là giáo viên thể dục",
+    "studying": "Hiện đang theo hoc",
+    "generalEducation": "Học vấn phổ thông",
+    "qualification": "Trình độ chuyên môn",
+    "specializedTraining": "Chuyên ngành đào tạo",
+    "formsOfTraining": "Hình thức đào tạo",
+    "trainingPlaces": "Nơi đào tạo",
+    "trainingCountry": "Nước đào tạo",
+    "academicRank": "Học hàm",
+    "degree": "Trình độ học vấn",
+    "titleConferred": "Danh hiệu được phong",
+    "yearOfConferred": "Năm phong tặng",
+    "yearOfRecognition": "Năm công nhận",
+    "dateOfReceivingPosition": "Ngày nhận Vị trí cao nhất",
+    "dateOfReceivingAllowance": "Ngày hưởng phụ cấp",
+    "startTime": "Thời gian bắt đầu",
+    "endTime": "Thời gian kết thúc",
+    "salaryStartDate": "Ngày hưởng bậc lương hiện tại",
+    "status": "Trạng Thái Nhân Viên",
+    "familyComeFrom": "Gia đình xuất thân",
+    "familyPriority": "Gia đình thuộc diện ưu tiên",
+    "familyYourself": "Diện ưu tiên bản thân",
+    "timeSheet": "Nhật ký công việc",
+    "positionStaff": "Vị trí công tác",
+    "staffSalaryTemplate": "Mẫu bảng lương áp dụng cho nhân viên",
+    "introducer": "Người giới thiệu",
+    "recruiter": "Người quyết định tuyển dụng"
+  },
+  "document_template": "Mẫu hồ sơ",
+  "staff_document_status": "Tình trạng hồ sơ nhân viên",
+  "mark_as_submitted": "Đánh dấu đã nộp",
+  "mark_as_not_submitted": "Đánh dấu chưa nộp",
+  "save_documents": "Lưu hồ sơ",
+  "no_documents": "Không có tài liệu nào",
+  "actions": "Thao tác",
+  "no": "STT",
+  "document_name": "Tên tài liệu",
+  "description": "Mô tả tài liệu",
+  "attachment": "Tệp đính kèm",
+  "submission_date": "Ngày nộp",
+  "submitted": "Đã nộp",
+  "unsaved_changes_warning": "Bạn có chắc chắn muốn rời đi? Những thay đổi chưa được lưu sẽ bị mất.",
+  "educationHistory": {
+    "title": "quá trình đào tạo",
+    "startDate": "Năm nhập học",
+    "endDate": "Năm tốt nghiệp",
+    "startDateOfQD": "Ngày nhập học theo QĐ",
+    "endDateOfQD": "Năm tốt nghiệp theo QĐ",
+    "returnDate": "Năm tiếp nhận về",
+    "educationalInstitution": "Cơ sở đào tạo",
+    "country": "Nước đào tạo",
+    "decisionNumber": "Quyết định số",
+    "date": "Ngày",
+    "fundingSource": "Nguồn kinh phí",
+    "extendDateByDecision": "Gia hạn đến",
+    "speciality": "Ngành đào tạo",
+    "major": "Chuyên ngành đào tạo",
+    "formsOfTraining": "Hình thức đào tạo",
+    "degree": "Bằng cấp",
+    "isConfirmation": "Xác nhận",
+    "basis": "Căn cứ",
+    "note": "Ghi chú",
+    "isCountedForSeniority": "Tính thâm niên",
+    "notFinish": "Không hoàn thành",
+    "isExtended": "Gia hạn",
+    "isCurrent": "Đang đi học"
+  },
+  "agreements": {
+    "title": "Hợp đồng",
+    "signedDate": "Ngày thiết lập/Ngày ký",
+    "startDate": "Ngày bắt đầu hiệu lực",
+    "endDate": "Ngày hết hạn",
+    "agreementStatus": "Trạng thái",
+    "labourAgreementNumber": "Hợp đồng số",
+    "contractType": "Loại hợp đồng",
+    "workingHour": "Giờ công chuẩn 1 ngày",
+    "workingHourWeekMin": "Giờ công tối thiểu 1 tuần",
+    "workingHourWeekMax": "Giờ công tối đa 1 tuần",
+    "workingPlace": "Nơi làm việc",
+    "salaryArea": "Vùng lương",
+    "salary": "Mức lương",
+    "salaryUnit": "Đơn vị tính lương",
+    "salaryInsurance": "Mức lương BHXH bắt buộc",
+    "salaryInsuranceUnit": "Đơn vị tính lương BHXH",
+    "attachments": "Các tệp đính kèm hợp đồng lao động"
+  },
+  "rewardHistory": {
+    "title": "Quá trình khen thưởng",
+    "organization": "Đơn vị khen thưởng",
+    "rewardDate": "Ngày quyết định khen thưởng",
+    "rewardType": "Loại khen thưởng",
+    "department": "Phòng ban khen thưởng",
+    "file": "Tệp đính kèm"
+  },
+  "disciplineHistory": {
+    "title": "Quá trình kỷ luật",
+    "organization": "Đơn vị kỷ luật",
+    "disciplineDate": "Ngày quyết định kỷ luật",
+    "disciplineType": "Loại kỷ luật",
+    "department": "Phòng ban kỷ luật",
+    "file": "Tệp đính kèm"
+  },
+  "maternityHistory": {
+    "title": "quá trình thai sản",
+    "startDate": "Ngày bắt đầu hưởng chế độ TS",
+    "endDate": "Ngày kết thúc hưởng chế độ TS",
+    "maternityLeaveStartDate": "Ngày bắt đầu nghỉ TS",
+    "maternityLeaveEndDate": "Ngày kết thúc nghỉ TS",
+    "birthNumber": "Sinh con lần thứ",
+    "note": "Ghi chú"
+  },
+  "allowanceHistory": {
+    "title": "quá trình phụ cấp",
+    "startDate": "Hưởng từ",
+    "endDate": "Đến",
+    "allowanceType": "Loại phụ cấp",
+    "coefficient": "Hệ số",
+    "note": "Ghi chú"
+  },
+  "overseasWorkHistory": {
+    "title": "quá trình công tác nước ngoài",
+    "startDate": "Thời gian bắt đầu",
+    "endDate": "Thời gian kết thúc",
+    "country": "Nước công tác",
+    "companyName": "Tên tổ chức/ cơ quan làm việc ở nước ngoài",
+    "decisionNumber": "Số quyết định",
+    "decisionDate": "Ngày ký quyết định",
+    "purpose": "Mục đích công tác"
+  },
+  "trainingHistory": {
+    "title": "quá trình bồi dưỡng",
+    "startDate": "Thời gian bắt đầu",
+    "endDate": "Thời gian kết thúc",
+    "trainingPlace": "Nơi bồi dưỡng",
+    "trainingCountry": "Nước bồi dưỡng",
+    "certificate": "Văn bằng chứng chỉ",
+    "trainingContent": "Nội dung bồi dưỡng"
+  },
+  "workingHistory": {
+    "title": "quá trình công tác",
+    "startDate": "Từ ngày",
+    "endDate": "Đến ngày",
+    "position": "Chức danh",
+    "department": "Đơn vị",
+    "note": "Ghi chú",
+    "employeeStatus": "Trạng thái",
+    "unpaidLeave": "Nghỉ không lương"
+  },
+  "positionStaff": {
+    "title": "Vị trí công tác",
+    "fromDate": "Từ ngày",
+    "toDate": "Đến ngày",
+    "position": "Vị trí",
+    "department": "Phòng ban",
+    "note": "Ghi chú",
+    "relationshipType": "Mối quan hệ",
+    "supervisor": "Người quản lý"
+  },
+  "positionHistory": {
+    "title": "quá trình chức vụ",
+    "fromDate": "Ngày bắt đầu",
+    "toDate": "Ngày kết thúc",
+    "decisionCode": "Số quyết định",
+    "decisionDate": "Ngày",
+    "department": "Đơn vị",
+    "position": "Chức vụ",
+    "note": "Ghi chú",
+    "allowanceCoefficient": "Hệ số PCCV",
+    "current": "Là chức vụ hiện tại",
+    "connectedAllowanceProcess": "Liên kết với quá trình phụ cấp",
+    "mainPosition": "Chức vụ chính",
+    "concurrentlyPosition": "Chức vụ kiêm nhiệm"
+  },
+  "allowanceSeniorityHistory": {
+    "title": "quá trình phụ cấp thâm niên nghề giáo",
+    "startDate": "Ngày bắt đầu",
+    "quotaCode": "Mã ngạch",
+    "note": "Ghi chú",
+    "percentReceived": "% hưởng"
+  },
+  "relatives": {
+    "name": "Họ và tên",
+    "job": "Nghề nghiệp",
+    "dob": "Ngày sinh",
+    "relative": "Quan hệ",
+    "address": "Nơi ở hiện tại",
+    "desc": "Mô tả",
+    "workingPlace": "Tên và địa chỉ cơ quan nơi làm việc",
+    "dependent": "Phụ thuộc",
+    "taxCode": "Mã số thuế",
+    "dependentDeductionFromDate": "Giảm trừ từ ngày",
+    "dependentDeductionToDate": "Giảm trừ đến ngày"
+  },
+  "department": {
+    "title": "Phòng ban",
+    "name": "Tên phòng ban",
+    "code": "Mã ",
+    "saveUpdate": "Thêm mới",
+    "search": "Nhập từ khóa",
+    "displayOrder": "Mã hiển thị",
+    "foundedDate": "Ngày thành lập",
+    "sortNumber": "Thứ tự hiển thị",
+    "foundedNumber": "Số thành lập",
+    "function": "Chức năng",
+    "description": "Mô tả",
+    "industryBlock": "Khối ngành",
+    "parent": "Phòng ban cha",
+    "warningParent": "Không thể chọn phòng ban này làm phòng ban cha",
+    "notiUse": "Phòng ban đã được sử dụng không thể xóa",
+    "select": "Lựa chọn phòng ban",
+    "departmentDisplayCode": "Số hiệu phòng ban",
+    "establishDecisionCode": "Số quyết định thành lập",
+    "establishDecisionDate": "Ngày quyết định thành lập",
+    "hrdepartmentType": "Loại phòng ban",
+    "positionTitleManager": "Chức danh quản lý",
+    "positionTitles": "Chức danh thuộc phòng ban",
+    "subDepartments": "Phòng ban trực thuộc",
+    "shiftWorks": "Ca làm việc",
+    "shortName": "Tên viết tắt",
+    "organization": "Đơn vị trực thuộc"
+  },
+  "civilServantCategory": {
+    "title": "Mã ngạch công chức",
+    "code": "Mã",
+    "value": "Giá trị",
+    "name": "Tên"
+  },
+  "educationDegree": {
+    "title": "Trình độ học vấn",
+    "code": "Mã",
+    "value": "Giá trị",
+    "name": "Tên"
+  },
+  "educationType": {
+    "title": "Loại hình đào tạo",
+    "code": "Mã",
+    "name": "Tên",
+    "nameEng": "Tên tiếng Anh",
+    "description": "Mô tả"
+  },
+  "speciality": {
+    "title": "Chuyên ngành",
+    "code": "Mã",
+    "name": "Tên",
+    "nameEng": "Tên tiếng Anh",
+    "description": "Mô tả"
+  },
+  "trainingBase": {
+    "title": "Cơ sở đào tạo",
+    "code": "Mã",
+    "name": "Tên",
+    "nameEng": "Tên tiếng Anh",
+    "description": "Mô tả"
+  },
+  "professionalDegree": {
+    "title": "Trình độ chuyên môn",
+    "code": "Mã",
+    "name": "Tên",
+    "nameEng": "Tên tiếng Anh",
+    "description": "Mô tả"
+  },
+  "informaticDegree": {
+    "title": "Trình độ tin học",
+    "code": "Mã",
+    "name": "Tên",
+    "nameEng": "Tên tiếng Anh",
+    "description": "Mô tả"
+  },
+  "politicaltheoryLevel": {
+    "title": "Trình độ lý luận chính trị",
+    "code": "Mã",
+    "name": "Tên",
+    "nameEng": "Tên tiếng Anh",
+    "description": "Mô tả"
+  },
+  "titleConferred": {
+    "title": "Danh hiệu phong tặng",
+    "code": "Mã",
+    "name": "Tên",
+    "nameEng": "Tên tiếng Anh",
+    "description": "Mô tả"
+  },
+  "stateManagementLevel": {
+    "title": "Trình độ quản lí nhà nước",
+    "code": "Mã",
+    "name": "Tên",
+    "nameEng": "Tên tiếng Anh",
+    "description": "Mô tả"
+  },
+  "budget": {
+    "title": "Ngân sách",
+    "name": "Tên",
+    "code": "Mã",
+    "currency": "Tiền tệ",
+    "openingBalance": "Số dư đầu kỳ",
+    "endingBalance": "Số dư cuối kỳ",
+    "description": "Miêu tả"
+  },
+  "leaveType": {
+    "name": "Tên loại ngày nghỉ",
+    "code": "Mã loại ngày nghỉ",
+    "description": "Mô tả loại ngày nghỉ"
+  },
+  "budgetCategory": {
+    "title": "Loại khoản",
+    "name": "Tên",
+    "code": "Mã",
+    "description": "Mô tả",
+    "validation": {
+      "nameRequired": "Tên là bắt buộc.",
+      "budgetCategoryRequired": "Số dư đầu kỳ là bắt buộc.",
+      "openingBalanceInvalid": "Số dư đầu kỳ phải là số hợp lệ.",
+      "openingBalanceMin": "Số dư đầu kỳ phải lớn hơn hoặc bằng 0."
+    }
+  },
+  "voucher": {
+    "title": "Hóa đơn thu - chi",
+    "name": "Tên",
+    "code": "Mã",
+    "description": "Mô tả",
+    "voucherDate": "Ngày hóa đơn",
+    "totalAmount": "Tổng số tiền",
+    "amount": "Số tiền",
+    "note": "Ghi chú",
+    "voucherCode": "Mã hóa đơn",
+    "voucherType": "Loại hóa đơn",
+    "typeIncome": "Thu",
+    "typeExpense": "Chi",
+    "linkedBudget": "Ngân sách liên kết",
+    "budgetCategory": "Loại khoản"
+  },
+  "voucherItem": {
+    "name": "Loại khoản",
+    "amount": "Số tiền",
+    "note": "Ghi chú",
+    "title": "Danh sách Voucher Item",
+    "budgetCategory": "Loại khoản"
+  },
+  "educationalManagementLevel": {
+    "title": "Trình độ quản lí giáo dục",
+    "code": "Mã",
+    "name": "Tên",
+    "nameEng": "Tên tiếng Anh",
+    "description": "Mô tả"
+  },
+  "interviewSchedule": {
+    "candidate": "Ứng viên",
+    "interviewTime": "Thời gian phỏng vấn",
+    "interviewLocation": "Địa điểm phỏng vấn",
+    "interviewer": "Người phỏng vấn",
+    "note": "Ghi chú",
+    "status": "Trạng thái",
+    "status.not_interviewed": "Chưa phỏng vấn",
+    "status.interviewed": "Đã phỏng vấn",
+    "status.cancelled": "Đã hủy",
+    "recruitmentRound": "Vòng phỏng vấn"
+  },
+  "navigation": {
+    "hrDocumentItem": "Tài liệu/Hồ sơ",
+    "kpi": "KPI",
+    "kpi-result": "Kết quả KPI",
+    "statisticsTimekeeping": "Thông kê lịch chấm công",
+    "salary": "Lương thưởng",
+    "salaryitem": "Thành phần lương",
+    "salaryIncrement": "Loại tăng lương",
+    "calendar": "Lịch",
+    "color": "Màu sắc",
+    "academic": "Học hàm",
+    "dashboard": {
+      "title": "Tổng quan",
+      "statisticsGeneral": "Thống kê chung"
+    },
+    "statisticsByProject": "Theo dự án",
+    "statisticsByTimeSheet": "Theo thời gian biểu",
+    "positionTitle": "Vị trí",
+    "ethnics": "Dân tộc",
+    "profile": "Hồ sơ cá nhân",
+    "country": "Quốc gia",
+    "religion": "Tôn giáo",
+    "certificate": "Chứng chỉ",
+    "allowanceType": "Loại phụ cấp",
+    "informaticDegree": "Trình độ tin học",
+    "professionalDegree": "Trình độ chuyên môn",
+    "stateManagementLevel": "Trình độ quản lí nhà nước",
+    "educationalManagementLevel": "Trình độ quản lí giáo dục",
+    "politicaltheoryLevel": "Trình độ lý luận chính trị",
+    "educationDegree": "Trình độ học vấn",
+    "englishLevel": "Trình độ tiếng anh",
+    "englishCertificate": "Chứng chỉ tiếng anh",
+    "otherLanguage": "Ngoại ngữ khác",
+    "titleConferred": "Danh hiệu được phong",
+    "department": "Đơn vị",
+    "HumanResourcesInformation": "Nhân viên",
+    "civilServantCategory": "Mã ngạch công chức",
+    "budget": {
+      "title": "Quản lý ngân sách",
+      "budget": "Quỹ",
+      "voucher": "Chi tiêu",
+      "budgetCategory": "Loại khoản",
+      "report": "Báo cáo"
+    },
+    "organizationalUnits": {
+      "title": "Đơn vị",
+      "list": "Danh sách đơn vị"
+    },
+    "organization": {
+      "title": "Cơ cấu tổ chức",
+      "companyInfo": "Thông tin công ty",
+      "unit": "Đơn vị",
+      "departmentType": "Loại phòng ban",
+      "workplace": "Địa điểm làm việc",
+      "rankTitle": "Cấp bậc",
+      "departmentGroup": "Nhóm đơn vị",
+      "positionRole": "Nhóm quyền mặc định",
+      "positionTitleV2": "Chức danh",
+      "hrDepartmentIp": "IP Whitelist",
+      "staffIpKeeping": "Nhân viên chấm công ngoài công ty",
+      "organizationalChart": "Sơ đồ tổ chức",
+      "diagramList": "Danh sách sơ đồ",
+      "select": "Chọn đơn vị"
+    },
+    "staff": {
+      "title": "Nhân viên",
+      "all": "Tất cả nhân viên",
+      "officialMembers": "Thành viên chính thức",
+      "expertAdvice": "Chuyên gia tư vấn",
+      "intern": "Sinh viên thực tập",
+      "applicantProfile": "Hồ sơ ứng viên",
+      "staffLabourAgreement": "Hợp đồng lao động",
+      "introduceCost": "Chi phí giới thiệu",
+      "staffDocumentItem": "Tài liệu/hồ sơ nhân viên",
+      "hr-document-template": "Mẫu tài liệu nhân viên",
+      "staffManagement": "Hồ sơ nhân viên",
+      "evaluationForm": "Phiếu đánh giá",
+      "staffWorkingHistory": "Lịch sử công tác",
+      "transfer": {
+        "title": "Điều chuyển",
+        "workingProcess": "Quá trình điều động, bổ nhiệm"
+      },
+      "position": "Vị trí công tác",
+      "contractManagement": {
+        "title": "Quản lý hợp đồng",
+        "listOfContract": "Hợp đồng",
+        "contractAddendum": "Phụ lục hợp đồng",
+        "listOfExpiredContract": "DS hợp đồng đến hạn"
+      },
+      "disciplinaryManagement": {
+        "title": "Quản lý kỷ luật",
+        "listOfDiscipline": "Danh sách kỷ luật",
+        "reportingDiscipline": "Báo cáo kỷ luật"
+      },
+      "rewardManagement": {
+        "title": "Quản lý khen thưởng",
+        "listAward": "DS khen thưởng",
+        "reportingAward": "Báo cáo khen thưởng"
+      },
+      "resignationManagement": {
+        "title": "Quản lý nghỉ việc",
+        "registerResignation": "Đăng ký nghỉ việc",
+        "listOfLeavedEmployee": "DS nhân viên nghỉ việc",
+        "listWaitLeaveEmployee": "DS nhân viên chờ nghỉ việc"
+      },
+      "suspensionManagement": {
+        "title": "Quản lý tạm hoãn",
+        "listOfRegistrationSuspended": "DS đăng ký tạm hoãn",
+        "listOfRegistrationRework": "DS đăng ký làm lại",
+        "reportingRework": "BC nhân viên nào làm lại"
+      },
+      "relative": {
+        "title": "Người thân",
+        "listOfRelative": "DS người thân"
+      },
+      "dependent": {
+        "title": "Người phụ thuộc",
+        "dependent": "DS người phụ thuộc",
+        "totalDependents": "Báo cáo tổng số người phụ thu"
+      }
+    },
+    "payroll": {
+      "title": "Tiền lương",
+      "all": "Tất cả",
+      "listSalaryregime": "DS chế độ lương",
+      "configuration": "Cấu hình tính lương",
+      "basicSalary": "Lương cơ bản",
+      "salarySocialInsurance": "Lương BHXH",
+      "setupSalary": "Thiết lập tính lương",
+      "periodDepartment": "Kỳ lương",
+      "dataLock": "Khóa dữ liệu",
+      "lockConfiguration": "DS cấu hình khóa đối tượng",
+      "lockObject": "Khóa đối tượng",
+      "payRoll": "Tính lương nhân viên",
+      "approvePayroll": "Duyệt bảng lương",
+      "exportPayroll": "Xuất bảng lương",
+      "exportPayslip": "Xuất phiếu lương",
+      "summaryPayrollReport": "BC tổng hợp",
+      "reportAgio": "BC chuyển tiền công đoàn",
+      "taxReport": "BC thuế",
+      "reportTaxPit": "BC Tổng hợp thuế PIT hàng tháng",
+      "category": "Danh mục lương ",
+      "period": "Kỳ lương",
+      "allowance": "Phụ cấp",
+      "salaryGrade": "Bậc lương",
+      "salaryMasterGrade": "Ngạch"
+    },
+    "recruitment": {
+      "title": "Tuyển dụng",
+      "request": "Yêu cầu tuyển dụng",
+      "plan": "Kế hoạch tuyển dụng",
+      "period": {
+        "title": "Đợt tuyển dụng",
+        "create": "Thêm mới đợt tuyển dụng",
+        "edit": "Chỉnh sửa đợt tuyển dụng"
+      },
+      "profile": "Hồ sơ",
+      "exam": "Ứng viên thi tuyển",
+      "successfulProfile": "Ứng viên trúng tuyển",
+      "category": "Danh mục tuyển dụng"
+    },
+    "timeKeeping": {
+      "title": "Chấm công",
+      "attendance": "Điểm danh",
+      "holiday": "Ngày nghỉ"
+    },
+    "timeSheetDetail": {
+      "title": "Chấm công"
+    },
+    "timekeepingReport": {
+      "title": "Bảng chấm công"
+    },
+    "confirmOvertime": {
+      "title": "Xác nhận làm thêm giờ"
+    },
+    "shiftRegistration": {
+      "title": "Đăng ký ca làm việc",
+      "approve": "Phê duyệt"
+    },
+    "publicHolidayDate": {
+      "title": "Ngày nghỉ làm việc",
+      "holidayType": "Loại ngày nghỉ",
+      "holidayDate": "Ngày nghỉ",
+      "salaryCoefficient": "Hệ số tính lương",
+      "description": "Mô tả"
+    },
+    "leaveRequest": {
+      "title": "Yêu cầu nghỉ phép"
+    },
+    "shiftChangeRequest": {
+      "title": "Yêu cầu đổi ca làm việc"
+    },
+    "overtimeRequest": {
+      "title": "Yêu cầu xác nhận làm thêm giờ"
+    },
+    "confirmStaffworkSchedule": {
+      "title": "Xác nhận kết quả làm việc"
+    },
+    "staffv2": "Thông tin nhân viên",
+    "directory": "Danh mục",
+    "healthUnit": "Đơn vị y tế",
+    "patient": "Danh sách bệnh nhân trên hệ thống",
+    "familyRelationship": "Quan hệ thân nhân",
+    "occupation": "Nghề nghiệp",
+    "ethnicity": "Dân tộc",
+    "civilServantType": "Phân loại công chức",
+    "reward": "Hình thức khen thưởng",
+    "contractType": "Loại hợp đồng",
+    "employeeStatus": "Tình trạng nhân viên",
+    "location": "Vị trí",
+    "discipline": "Kỷ luật",
+    "profession": "Nghề nghiệp",
+    "grade": "Bậc công chức",
+    "educationType": "Loại hình đào tạo",
+    "speciality": "Chuyên Ngành",
+    "educationalInstitution": "Cơ sở đào tạo",
+    "workplace": "Địa điểm làm việc",
+    "administrativeUnit": "Đơn vị hành chính",
+    "advancePayment": {
+      "title": "Tạm ứng lương"
+    },
+    "salaryResult": {
+      "title": "Bảng lương"
+    },
+    "salaryStaffPayslip": {
+      "title": "Phiếu lương"
+    },
+    "salaryOutcome": {
+      "title": "Kết quả tính lương"
+    },
+    "allowance": {
+      "title": "Phụ cấp"
+    },
+    "staffAllowance": {
+      "title": "Phụ cấp nhân viên"
+    },
+    "allowancePolicy": {
+      "title": "Chính sách phụ cấp"
+    },
+    "salaryUnit": {
+      "title": "Đơn vị thời gian tính lương"
+    },
+    "salaryType": {
+      "title": "Nhóm dữ liệu lương"
+    },
+    "salaryArea": {
+      "title": "Vùng lương"
+    },
+    "salaryConfig": {
+      "title": "Cấu hình lương"
+    },
+    "salaryTemplate": {
+      "title": "Mẫu bảng lương"
+    },
+    "staffSalaryTemplate": {
+      "title": "Mẫu bảng lương nhân viên"
+    },
+    "rankTitle": {
+      "title": "Cấp bậc"
+    },
+    "departmentType": {
+      "title": "Loại phòng ban"
+    },
+    "departmentGroup": {
+      "title": "Nhóm đơn vị"
+    },
+    "positionRole": {
+      "title": "Nhóm quyền mặc định"
+    },
+    "positionTitleV2": {
+      "title": "Chức danh"
+    },
+    "hrDepartmentIp": {
+      "title": "IP Whitelist"
+    },
+    "staffIpKeeping": {
+      "title": "Nhân viên chấm công ngoài công ty"
+    },
+    "staffSalaryItemValue": {
+      "title": "Giá trị lương của nhân viên"
+    },
+    "work": {
+      "title": "Công việc",
+      "timesheet": "Nhật kí công việc",
+      "timesheetDetails": "Nhật kí công việc",
+      "task": "Phần việc",
+      "project": "Dự án",
+      "workingStatus": "Trạng thái làm việc",
+      "shiftWork": "Ca làm việc"
+    },
+    "administration": {
+      "title": "Quản trị",
+      "user": "Quản trị người dùng",
+      "role": "Vai trò",
+      "personalInfo": "Thông tin cá nhân",
+      "changePassword": "Thay đổi mật khẩu",
+      "orgInfo": "Thông tin đơn vị",
+      "profile": "Thông tin tài khoản",
+      "accounts": "Tài khoản",
+      "generalCatalog": "Danh mục chung",
+      "employeeStatus": "Tình trạng nhân viên",
+      "workStatus": "Trạng thái làm việc",
+      "assets": "Công cụ/ dụng cụ",
+      "civilServant": "Công chức",
+      "certificate": "Chứng chỉ",
+      "qualification": "Trình độ",
+      "trainingInstitution": "Cơ sở đào tạo",
+      "trainingType": "Loại hình đào tạo",
+      "academicTitle": "Học hàm",
+      "fieldOfStudy": "Chuyên ngành",
+      "honoraryTitle": "Danh hiệu",
+      "organization": "Đơn vị",
+      "administrativeUnit": "Đơn vị hành chính",
+      "country": "Quốc gia",
+      "ethnicity": "Dân tộc",
+      "religion": "Tôn giáo",
+      "profession": "Nghề nghiệp",
+      "bank": "Ngân hàng",
+      "evaluation_criteria": "Tiêu chí đánh giá",
+      "evaluation_template": "Mẫu đánh giá",
+      "content_template": "Quản lý Mẫu",
+      "workplace": "Địa điểm làm việc"
+    },
+    "list": "Danh sách",
+    "category": {
+      "title": "Danh mục",
+      "staff": {
+        "title": "Danh mục nhân viên",
+        "typeDepartments": "Loại phòng ban",
+        "departments": "Phòng ban",
+        "resource": "Tài nguyên",
+        "listTitles": "Chức danh",
+        "listPositions": "Vị trí",
+        "employeesType": "Loại nhân viên",
+        "relationshipType": "Loại quan hệ",
+        "awardType": "Loại khen thưởng",
+        "leaveReasons": "Lý do nghỉ việc",
+        "suspendedType": "Loại tạm hoãn",
+        "transferType": "Loại điều chuyển",
+        "typeContract": "Loại hợp đồng",
+        "typeAddendum": "Loại phụ lục",
+        "reasonRefusal": "Lý do từ chối",
+        "disciplinaryReason": "Lý do kỷ luật",
+        "departmentGroup": "Nhóm phòng ban"
+      }
+    },
+    "personnel": {
+      "pending": "Chờ nhận việc",
+      "employeeOnboarding": "Tiếp nhận ứng viên",
+      "failingWord": "Không đến nhận việc",
+      "candidateWorking": "Đã nhận việc",
+      "employeesReporting": "Xuất báo cáo"
+    },
+    "timeSheet": {
+      "workSchedule": "Quản lí lịch làm việc",
+      "periodSetting": "Thiết lập giai đoạn làm việc",
+      "scheduleManager": "Lịch làm việc",
+      "leaveManagement": "Quản lí ngày nghỉ",
+      "leaveList": "Danh sách ngày nghỉ",
+      "maternityLeave": "Nghỉ chế độ thai sản",
+      "aggregateData": "Tổng hợp dữ liệu",
+      "analyzeData": "Phân tích dữ liệu",
+      "timesheetTable": "Bảng chấm công",
+      "categoryManagement": "Danh mục chấm công",
+      "shiftWork": "Ca làm việc",
+      "leaveType": "Loại ngày nghỉ",
+      "overtimeType": "Loại tăng ca",
+      "holidayList": "Ngày lễ trong năm",
+      "staffWorkSchedule": "Phân ca làm việc",
+      "workScheduleCalendar": "Bảng phân ca",
+      "publicHolidayDate": "Ngày nghỉ làm việc"
+    },
+    "insurance": {
+      "staffSocialInsurance": "Bảo hiểm nhân viên",
+      "staffHasInsurance": "Danh sách đóng BHXH",
+      "root": "Bảo hiểm",
+      "insuranceType": "Loại bảo hiểm",
+      "insuranceRegion": "Vùng bảo hiểm",
+      "insregionAdminunit": "Khu vực vùng bảo hiểm",
+      "salaryInsuranceRegion": "Phân vùng đóng bảo hiểm",
+      "insuranceRate": "Tỉ lệ đóng bảo hiểm"
+    },
+    "salaryAutoMap": "Kết nối thành phần lương",
+    "hrResourcePlan": {
+      "title": "Báo cáo định biên"
+    },
+    "hrIntroduceCost": {
+      "title": "Chi phí giới thiệu"
+    },
+    "workplace": {
+      "title": "Địa điểm làm việc",
+      "name": "Tên địa điểm làm việc",
+      "code": "Mã địa điểm làm việc",
+      "description": "Mô tả"
+    },
+    "organizationalDirectory": {
+      "title": "Danh mục tổ chức"
+    },
+    "groupPositionTitle": {
+      "title": "Nhóm ngạch"
+    },
+    "historyTimeSheetDetail": {
+      "title": "Thống kê công"
+    }
+  },
+  "hrDocumentItem": {
+    "name": "Tên tài liệu",
+    "code": "Mã tài liệu",
+    "displayOrder": "Thứ tự hiển thị",
+    "description": "Mô tả"
+  },
+  "familyRelationship": {
+    "title": "Quan hệ thân nhân",
+    "name": "Tên",
+    "code": "Mã",
+    "description": "Mô tả"
+  },
+  "calendar": {
+    "title": "Ghi chú sự kiện",
+    "addEvent": "Thêm sự kiện",
+    "name": "Name",
+    "languageKey": "Language Key"
+  },
+  "salaryItem": {
+    "title": "Danh mục thành phần lương",
+    "code": "Mã",
+    "name": "Tên thành phần",
+    "type": "Tính chất",
+    "formula": "Công thức tính",
+    "defaultValue": "Giá trị mặc định",
+    "active": "Kích hoạt",
+    "default": "Mặc định"
+  },
+  "payslip": {
+    "title": "Phiếu lương nhân viên"
+  },
+  "salaryIncrement": {
+    "title": "Danh mục loại tăng lương"
+  },
+  "applicant": {
+    "title": "Hồ sơ ứng viên"
+  },
+  "organizationBranch": {
+    "title": "Địa điểm làm việc"
+  },
+  "general": {
+    "youAreHere": "Bạn đang ở đây:",
+    "home": "Trang chủ",
+    "category": "Danh mục",
+    "fileName": "Tên tệp",
+    "year": "Năm",
+    "month": "Tháng",
+    "week": "Tuần",
+    "day": "Ngày",
+    "size": "Kích thước",
+    "noData": "Không có dữ liệu!",
+    "button": {
+      "view": "Xem chi tiết",
+      "createUser": "Tạo người dùng",
+      "calculation": "Tính toán",
+      "add_income": "Thêm khoản thu",
+      "add_expense": "Thêm khoản chi",
+      "add": "Thêm mới",
+      "delete": "Xóa",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "edit": "Chỉnh sửa",
+      "select": "Lựa chọn",
+      "filter": "Bộ lọc",
+      "search": "Tìm kiếm",
+      "back": "Quay lại",
+      "update": "Cập nhật",
+      "importExcel": "Nhập Excel",
+      "selectFile": "Chọn tệp",
+      "size": "Kích thước",
+      "fileName": "Tên tệp",
+      "close": "Đóng",
+      "remove": "Xoá",
+      "upload": "Tải lên",
+      "send": "Gửi",
+      "deselect": "Bỏ chọn",
+      "exportExcel": "Xuất excel",
+      "resetPassWord": "Cài lại mặt khẩu",
+      "reset": "Nhập lại",
+      "export_excel": "Xuất Excel",
+      "import_excel": "Nhập Excel",
+      "expand": "Xem đầy đủ",
+      "collapse": "Thu gọn"
+    },
+    "Add": {
+      "agreement": "Thêm mới chứng chỉ",
+      "positions": "Thêm mới vị trí",
+      "salaryHistory": "Thêm mới thân nhân"
+    },
+    "popup": {
+      "select": "Chọn",
+      "code": "Mã",
+      "name": "Tên"
+    },
+    "no": "STT",
+    "action": "Thao tác",
+    "enterSearch": "Nhập từ khóa",
+    "rowsPerPage": "Số hàng mỗi trang:",
+    "required": "Đây là trường bắt buộc",
+    "language": "Ngôn ngữ",
+    "emptyDataMessageTable": "Không có dữ liệu",
+    "emptyFile": "Trống",
+    "totalRows": "Tổng số bản ghi:",
+    "gotoPage": "Đi tới trang:",
+    "toHomepage": "Đi đến trang chủ",
+    "successExport": "Xuất Excel thành công!",
+    "close": "Đóng"
+  },
+  "pagination": {
+    "tool": "Công cụ"
+  },
+  "gender": {
+    "transgenderToFemale": "Chuyển giới nữ",
+    "transgenderToMale": "Chuyển giới nam",
+    "nonBinary": "Lưỡng tính",
+    "male": "Nam",
+    "female": "Nữ",
+    "other": "Khác",
+    "notDisclosed": "Không tiết lộ"
+  },
+  "certificate": {
+    "title": "Chứng chỉ",
+    "code": "Mã chứng chỉ",
+    "name": "Tên chứng chỉ",
+    "type": "Loại chứng chỉ",
+    "level": "Cấp độ",
+    "issueDate": "Ngày cấp"
+  },
+  "grade": {
+    "title": "Bậc công chức",
+    "grade": "Cấp bậc",
+    "code": "Mã",
+    "name": "Tên",
+    "nextGradeId": "Bậc tiếp theo",
+    "maxGrade": "Bậc lớn nhất",
+    "salaryCoefficient": "Hệ số lương",
+    "description": "Mô tả"
+  },
+  "discipline": {
+    "title": "Loại kỷ luật",
+    "code": "Mã",
+    "name": "Tên hình thức",
+    "level": "Mức độ",
+    "languageKey": "Ngôn ngữ",
+    "disciplineType": "Loại hình thức",
+    "formal": "Tính chất hình thức",
+    "evaluateYear": "Năm hiệu lực",
+    "description": "Mô tả"
+  },
+  "toast": {
+    "error": "Có lỗi xảy ra, vui lòng thử lại!",
+    "delete_success": "Đã xóa thành công!",
+    "please_select": "Hãy chọn ít nhất 1 mục để xóa!",
+    "duplicate_code": "Mã đã được sử dụng!",
+    "duplicate_name": "Tên đã được sử dụng!",
+    "update_success": "Cập nhật thành công!",
+    "add_success": "Thêm mới thành công!",
+    "user_exist": "Tên đăng nhập đã tồn tại!",
+    "change_password_success": "Đã thay đổi mật khẩu!",
+    "change_password_failure": "Có lỗi khi thay đổi mật khẩu!",
+    "timekeeping_success": "Đã điểm danh!",
+    "load_fail": "Có lỗi xảy ra khi tải dữ liệu, vui lòng thử lại sau"
+  },
+  "administrativeUnit": {
+    "title": "Đơn vị hành chính",
+    "code": "Mã",
+    "name": "Tên",
+    "level": "Cấp độ",
+    "levelUnit": "Cấp đơn vị",
+    "parent": "Đơn vị quản lý",
+    "description": "Mô tả",
+    "province": "Tỉnh/Thành phố",
+    "district": "Quận/Huyện",
+    "wards": "Xã/Phường"
+  },
+  "profession": {
+    "title": "Nghề nghiệp",
+    "code": "Mã",
+    "name": "Tên",
+    "description": "Mô tả"
+  },
+  "positiontitle": {
+    "title": "Vị trí"
+  },
+  "occupation": {
+    "title": "Nghề nghiệp",
+    "code": "Mã",
+    "name": "Tên",
+    "description": "Mô tả"
+  },
+  "allowanceType": {
+    "title": "Loại phụ cấp",
+    "code": "Mã",
+    "name": "Tên loại phụ cấp",
+    "description": "Mô tả"
+  },
+  "salaryAutoMap": {
+    "title": "Kết nối thành phần lương",
+    "salaryItem": "Thành phần lương kết nối",
+    "salaryAutoMapField": "Cấu hình",
+    "description": "Hành động kết nối"
+  },
+  "confirm_dialog": {
+    "createUser": {
+      "title": "Xác nhận tạo người dùng",
+      "text": "Bạn có chắc chắn muốn tạo người dùng cho những nhân viên đã chọn?",
+      "agree": "Xác nhận",
+      "cancel": "Hủy"
+    },
+    "delete": {
+      "title": "Xác nhận xóa",
+      "text": "Bạn có chắc chắn muốn xóa bản ghi này?",
+      "agree": "Xác nhận",
+      "cancel": "Hủy"
+    },
+    "delete_list": {
+      "title": "Xác nhận xóa",
+      "text": "Bạn có chắc chắn muốn xóa các bản ghi đã chọn?",
+      "agree": "Xác nhận",
+      "cancel": "Hủy"
+    },
+    "confirm_close": {
+      "title": "Xác nhận huỷ",
+      "text": "Bạn có chắc chắn huỷ?",
+      "agree": "Xác nhận",
+      "cancel": "Hủy"
+    },
+    "confirm_download_excel": {
+      "title": "Xác nhận tải Excel",
+      "text": "Bạn có muốn tải không? Quá trình này có thể mất vài phút.",
+      "agree": "Xác nhận",
+      "cancel": "Hủy"
+    }
+  },
+  "signIn": {
+    "title": "Đăng nhập"
+  },
+  "signUp": {
+    "title": "Đăng ký",
+    "titleForm": "Đăng ký tài khoản",
+    "infoLogin": "Thông tin đăng nhập"
+  },
+  "user": {
+    "title": "Tài khoản",
+    "personInfo": "Thông tin người dùng",
+    "displayName": "Tên hiển thị",
+    "gender": "Giới tính",
+    "username": "Tên đăng nhập",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "rePassword": "Nhập lại mật khẩu",
+    "currentPassword": "Mật khẩu hiện tại",
+    "newPassword": "Mật khẩu mới",
+    "changePass": "Đổi mật khẩu",
+    "rememberMe": "Lưu tài khoản",
+    "passwordMatchMessage": "Mật khẩu không chính xác",
+    "passwordMessage": "Mật khẩu quá ngắn",
+    "active": "Kích hoạt",
+    "usedByEmployee": "Nhân viên sử dụng",
+    "role": {
+      "title": "Vai trò",
+      "name": "Tên",
+      "authority": "Quyền",
+      "createdBy": "Người tạo"
+    },
+    "org": {
+      "title": "Đơn vị y tế",
+      "type": "Loại Đơn Vị"
+    }
+  },
+  "role": {
+    "title": "Vai trò",
+    "name": "Tên",
+    "authority": "Quyền",
+    "createdBy": "Người tạo"
+  },
+  "project": {
+    "title": "Dự án",
+    "name": "Tên dự án",
+    "code": "Mã dự án",
+    "description": "Mô tả",
+    "activity": {
+      "title": "Hoạt động",
+      "code": "Mã hoạt động",
+      "name": "Tên hoạt động",
+      "description": "Mô tả",
+      "list": "Danh sách hoạt động",
+      "select": "Lựa chọn hoạt động",
+      "parent": "Hoạt động trực thuộc"
+    }
+  },
+  "workingStatus": {
+    "title": "Trạng thái làm việc",
+    "code": "Mã ",
+    "name": "Tên",
+    "statusValue": "Giá trị"
+  },
+  "listweek": {
+    "mon": "Thứ Hai",
+    "tus": "Thứ Ba",
+    "wed": "Thứ Tư ",
+    "thu": "Thứ Năm",
+    "fri": "Thứ Sáu",
+    "sat": "Thứ Bảy",
+    "sun": "Chủ Nhật"
+  },
+  "timeSheet": {
+    "title": "Nhật kí công việc",
+    "addTimeSheet": "Thêm công việc",
+    "noTimeSheet": "Không có dữ liệu",
+    "workingDate": "Ngày làm việc",
+    "totalHours": "Tổng thời gian làm việc",
+    "startTime": "Thời gian bắt đầu",
+    "endTime": "Thời gian kết thúc",
+    "description": "Nội dung nhật kí",
+    "employee": "Nhân viên",
+    "estimateHour": "Thời gian ước lượng",
+    "project": "Dự án",
+    "activity": "Hoạt động",
+    "shiftWork": "Ca làm việc",
+    "workingStatus": "Trạng thái thực hiện",
+    "approveStatus": "Trạng thái phê duyệt",
+    "details": "Đầu việc",
+    "duration": "Khoảng thời gian",
+    "workingItemTitle": "Tiêu đề mục làm việc",
+    "activityName": "Tên hoạt động",
+    "activityCode": "Mã hoạt động",
+    "createDate": "Ngày tạo",
+    "priority": "Độ ưu tiên",
+    "chooseActivity": "Chọn hoạt động",
+    "nameTask": "Tên Phần việc"
+  },
+  "timeKeeping": {
+    "title": "Điểm danh",
+    "shiftWork": "Ca làm việc",
+    "startTime": "Thời gian bắt đầu",
+    "endTime": "Thời gian kết thúc",
+    "workingFormat": "Trạng thái làm việc",
+    "workingDate": "Ngày",
+    "note": "Ghi chú"
+  },
+  "shiftWork": {
+    "title": "Ca làm việc",
+    "code": "Mã ca",
+    "name": "Tên ca làm việc",
+    "totalHours": "Tổng thời gian làm việc",
+    "timePeriods": {
+      "buttonAdd": "Thêm giai đoạn làm việc",
+      "title": "Các khoảng thời gian",
+      "startTime": "Thời gian bắt đầu",
+      "endTime": "Thời gian kết thúc",
+      "code": "Mã giai đoạn",
+      "allowedLateMinutes": "Được phép đi muộn (phút)",
+      "workRatio": "Tỉ lệ ngày công",
+      "minWorkTimeHour": "Thời gian tối thiểu để tính đã đi làm (giờ)"
+    }
+  },
+  "staffWorkSchedule": {
+    "title": "Bảng phân ca làm việc",
+    "code": "Mã phân ca làm việc",
+    "name": "Tên bảng phân ca làm việc",
+    "staffs": "Nhân viên áp dụng",
+    "shiftWorks": "Ca làm việc",
+    "leaveType": "Loại ngày nghỉ"
+  },
+  "tool_tip": {},
+  "activity": {
+    "code": "Mã hoạt động",
+    "name": "Tên hoạt động",
+    "description": "Mô tả"
+  },
+  "task": {
+    "title": "Phần việc",
+    "table": "Bảng",
+    "status": "Trạng thái",
+    "byPriority": "Theo độ ưu tiên",
+    "name": "Tên công việc",
+    "kanBan": "kanBan",
+    "group": "Nhóm",
+    "adds": "Thêm vào công việc",
+    "members": "Thành viên",
+    "priority": "Ưu tiên",
+    "info": "Thông tin chung",
+    "acitivity": "Hoạt động",
+    "subTask": {
+      "title": "Việc cần làm",
+      "addCheckList": "Thêm danh sách công việc",
+      "add": "Thêm",
+      "delete": "Xóa",
+      "addAItem": "Thêm một mục"
+    },
+    "time": {
+      "title": "Thời gian",
+      "startTime": "Thời gian bắt đầu",
+      "endTime": "Thời gian hết hạn",
+      "estimateHour": "Thời gian ước lượng"
+    },
+    "action": "Thao tác",
+    "comment": "Bình luận",
+    "list": {
+      "project": "Dự án",
+      "task": "Phần việc",
+      "status": "Trạng thái",
+      "staff": "Phụ trách",
+      "priority": "Ưu tiên"
+    },
+    "assignee": "Phụ trách"
+  },
+  "kpi": {
+    "action": "Thao tác",
+    "name": "Tên KPI",
+    "code": "Mã KPI",
+    "kpi-item": {
+      "title": "Thêm phần tử KPI",
+      "name": "Tên phần tử KPI",
+      "code": "Mã phần tử KPI",
+      "weight": "Trọng số phần tử KPI",
+      "used_for_salary": "KPI có dùng để tính lương"
+    },
+    "kpi-result": {
+      "name-staff": "Tên nhân viên",
+      "name-kpi": "Tên KPI",
+      "kpi-result-item": {
+        "value": "Giá trị KPI"
+      }
+    }
+  },
+  "recruitmentPlan": {
+    "personParticipate": "Danh sách người tham gia"
+  },
+  "staffLeave": {
+    "title": "Nghỉ việc",
+    "decisionNumber": "Số quyết định",
+    "leaveDate": "Ngày nghỉ",
+    "stillInDebt": "Tài liệu còn nợ",
+    "handOverItems": "Các hạng mục bàn giao",
+    "paidStatus": "Trạng thái thanh toán lương"
+  }
+}

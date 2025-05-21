@@ -1,0 +1,130 @@
+.accordion {
+
+}
+
+.mt-44 {
+  // margin-top: 44px;
+}
+
+.accordion.MuiAccordion-rounded.MuiPaper-elevation1 {
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, .3)
+}
+
+.toolbar-menu-wrap.open .menu-area {
+  background-color: #fff;
+}
+
+// .MuiPaper-root .MuiCardContent-root {
+//     padding: 0px !important;
+// }
+
+.headerListProject {
+
+}
+
+.overflowY-visible {
+  overflow-y: visible !important;
+}
+
+
+.menu-list-button {
+  background-color: white;
+  border-radius: 4px;
+  z-index: 10;
+  padding: 4px 0;
+  box-shadow: 5px 5px 10px #9c9c9c88;
+
+  .menu-item-button {
+    background-color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .disable-item {
+    opacity: .6;
+    cursor: unset;
+  }
+
+  .undisable-item {
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(187, 187, 187, 0.155);
+    }
+  }
+}
+
+// .makeStyles-globitsTableWraper-1117 .MuiPaper-root .Component-horizontalScrollContainer-1122 div div div .MuiPaper-root{
+//     border-color : none !important
+// }
+.contract-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.date-range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+/* Listbox container adjustments */
+.MuiAutocomplete-paper:has(.custom-listbox) {
+  overflow-y: auto;
+  max-height: 300px;
+
+  ul {
+    padding: 0;
+  }
+}
+
+.MuiAutocomplete-popper:has(.custom-listbox) {
+  width: fit-content !important;
+}
+
+.custom-listbox {
+  display: table;
+
+  li {
+    display: table-row;
+    width: 100%;
+
+    p {
+      display: table-cell;
+      white-space: nowrap;
+      padding: 5px 7px;
+      border-bottom: 1px solid #000;
+      border-right: 1px solid #000;
+      min-width: 50px;
+      max-width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.custom-listbox .header {
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Stick to the top */
+  font-weight: bold;
+  text-align: center;
+  background-color: #f0f0f0; /* Background color to avoid overlap */
+  padding: 5px 0;
+  border-bottom: 2px solid #000;
+  z-index: 10; /* Ensure it stays above other elements */
+}
+.full-width {
+  width: 100%;
+}
+

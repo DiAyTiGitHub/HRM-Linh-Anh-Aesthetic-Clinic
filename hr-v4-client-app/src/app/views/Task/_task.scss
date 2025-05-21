@@ -1,0 +1,1119 @@
+.priorityTag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  color: white;
+  width: 100%;
+  margin-bottom: 4px;
+  padding: 4px 8px;
+}
+
+[data-rbd-drag-handle-context-id="1"]:first-child {
+  width: 100%;
+}
+
+.kanban-container {
+  .react-kanban-column {
+    background-color: white;
+    // min-width: fit-content;
+    padding: 0;
+    margin: 0;
+    // width: 100%;
+    height: auto !important;
+    position: relative;
+    // padding-top: 38px;
+
+    //scrolling for each column content
+    // &>div:nth-child(2) {
+    //   /* CSS styles for the second div */
+    //   max-height: 82vh;
+    //   padding-bottom: 6px;
+    //   overflow: auto;
+
+    //   &::-webkit-scrollbar-track {
+    //     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    //     border-radius: 10px;
+    //     background-color: #ffffff;
+    //   }
+
+    //   &::-webkit-scrollbar {
+    //     width: 4px;
+    //     display: none;
+    //     background-color: #ffffff;
+    //   }
+
+    //   &::-webkit-scrollbar-thumb {
+    //     border-radius: 10px;
+    //     // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    //     background-color: #a3a3a3;
+    //   }
+    // }
+
+    .kanban-column-header {
+      // font-size: 14px;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      padding: 0px 12px;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      flex-wrap: wrap;
+      // max-width: 202px;
+      padding: 4px;
+      font-size: 12px;
+      font-weight: bold;
+
+      .headerInfoContainer {
+        display: flex !important;
+      }
+
+      & .tag {
+        color: #fff;
+        border-radius: 3px;
+        width: fit-content;
+        margin: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .button {
+      bottom: -2%;
+      left: 5%;
+      margin-top: 10px;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      color: rgb(197, 192, 192);
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: gray;
+        color: #fff;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+      }
+    }
+
+    .loadMoreCardBtn {
+      transition: all 0.2s ease;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      color: rgb(197, 192, 192);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      top: 100%;
+      margin-top: 4px;
+      padding: 10px 12px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(137, 137, 137);
+        color: #fff;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+      }
+    }
+
+    &>div:not(:has(.kanban-column-header)) {
+      height: 100% !important;
+      border: 1px solid #e4e4e4;
+    }
+
+    &>div>div>div {
+      display: block !important;
+    }
+
+    .kanban-card {
+      border: 1px solid #dfdfdf;
+      border-radius: 3px;
+      margin: 4.8px 2.4px 0;
+      padding: 2.4px 2px 2.4px 4px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px;
+      background-color: #fffff2;
+      border-left: 4px solid #fff;
+
+      .cardCode {
+        // font-size: 13px;
+        color: #0060ff;
+        margin: unset !important;
+        // max-width: 202px;
+        // margin-bottom: 2px !important;
+        font-size: 12px;
+      }
+
+      .cardAttribute {
+        // padding-right: 6px;
+        // font-size: 13.4px;
+        // padding-top: 2px;
+        margin: unset !important;
+        // max-width: 202px;
+        font-size: 12px;
+
+        &>b {
+          opacity: 0.7;
+        }
+      }
+
+      .moreIcon {
+        opacity: 0.6;
+        font-size: 16px;
+        transition: all linear 0.1s;
+        // padding: 2px;
+        padding-top: 0px;
+      }
+
+      .moreIcon:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      .card-name {
+        overflow: hidden;
+        // text-overflow: ellipsis;
+        // font-size: 14.2px;
+        text-wrap: pretty;
+        // max-width: 202px;
+        font-size: 12px;
+      }
+
+      h5 {
+        font-size: 20px;
+        margin: 2px 0;
+      }
+
+      p {
+        margin: 6px 0 0px;
+      }
+
+      .card-project {
+        // background-color: #d5e4eb;
+        border-radius: 3px;
+        display: inline-block;
+        margin: 0;
+      }
+
+      .card-priority {
+        display: inline-block;
+        margin-bottom: 0;
+
+        &>span {
+          color: white;
+          padding: 3px;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+
+  .react-kanban-board {
+    padding: 4px 0 54px;
+
+    &::-webkit-scrollbar {
+      // display: none;
+      scrollbar-width: thin;
+      width: 4px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 8px;
+      scrollbar-width: thin;
+
+      background-color: #e7e7e7;
+      border: 1px solid #cacaca;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      scrollbar-width: thin;
+
+      border-radius: 8px;
+      background-color: #b8b8b8;
+    }
+  }
+
+  &>div>div {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.tagInTable {
+  border-radius: 3px;
+  padding: 4px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.tabStaff {
+  display: flex;
+  min-height: unset !important;
+  padding: 12px 24px !important;
+  min-width: unset !important;
+  margin-right: unset !important;
+
+  span {
+    display: contents;
+
+    svg {
+      margin-bottom: 3px !important;
+      margin-right: 3px;
+    }
+  }
+}
+
+.listButton {
+  button {
+    width: -webkit-fill-available;
+    justify-content: unset;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    box-shadow: none;
+  }
+}
+
+.NameField {
+  display: flex;
+  align-items: center;
+
+  input {
+    background-color: #fff0;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    &:focus-visible {
+      background-color: #fff;
+    }
+  }
+
+  &>div>div>div>div {
+    background-color: #fff0 !important;
+    padding: 0px !important;
+  }
+
+  fieldset {
+    border-color: #fff0;
+  }
+}
+
+.taskCodeWrapper {
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #ccc;
+
+  .taskCode {
+    margin: unset;
+    color: darkslategrey !important;
+    font-size: 14px;
+  }
+}
+
+.tabPanelNoPaddingOutline {
+  &>.MuiBox-root {
+    padding: unset !important;
+  }
+}
+
+.TextField {
+  display: flex;
+  margin: 20px 0px;
+
+  input {
+    background-color: #fff;
+    box-shadow: var(--ds-shadow-raised,
+        0 0px 0px -0.2px #091e4240,
+        0 0 0 0.5px var(--ds-border, #091e4214));
+  }
+
+  textarea {
+    background-color: #091e420a;
+    border-radius: 5px;
+
+    &:focus-visible {
+      background-color: #fff;
+      padding: 10px;
+    }
+  }
+
+  &>div {
+    padding-right: 10px;
+  }
+
+  &>div>div>div>div {
+    background-color: #fff0 !important;
+    padding: 0px !important;
+  }
+
+  .h6 {
+    position: absolute;
+    margin-left: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  fieldset {
+    border-color: #fff0;
+  }
+
+  button {
+    box-shadow: unset;
+    background-color: #091e420a;
+
+    span {
+      justify-content: inherit;
+    }
+  }
+}
+
+.SubField {
+  display: flex;
+  margin: 20px 0px;
+
+  input {
+    background-color: #fff;
+    box-shadow: var(--ds-shadow-raised,
+        0 0px 0px -0.2px #091e4240,
+        0 0 0 0.5px var(--ds-border, #091e4214));
+  }
+
+  textarea {
+    // background-color: #091e420a;
+    border-radius: 5px;
+
+    &:focus-visible {
+      background-color: #fff;
+      padding: 10px;
+    }
+  }
+
+  &>div {
+    padding-right: 10px;
+  }
+
+  fieldset {
+    border-color: #fff0;
+  }
+
+  button {
+    box-shadow: unset;
+    background-color: #091e420a;
+
+    span {
+      justify-content: inherit;
+    }
+  }
+}
+
+.Search {
+  padding: 10px 0px;
+
+  &>div {
+    width: 100%;
+  }
+
+  input {
+    background-color: #091e420a;
+    width: 100%;
+  }
+
+  &>div>div>div {
+    background-color: #fff0 !important;
+  }
+
+  fieldset {
+    border-color: #fff0;
+  }
+}
+
+.Member {
+  background-color: #091e420a;
+  padding: 10px;
+  width: fit-content;
+  white-space: nowrap;
+  box-shadow: unset;
+  margin: unset;
+  border-radius: 4px;
+
+  &+& {
+    margin-top: 8px;
+  }
+}
+
+.checkbox {
+  &>div {
+    flex-direction: unset;
+  }
+}
+
+.project {
+  text-decoration: underline;
+  background-color: unset;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.project-breadcrumb {
+  justify-content: space-between;
+  margin: 12px 0 10px;
+
+  p,
+  p>button {
+    text-transform: uppercase;
+    color: #717276;
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+.project-popup-task {
+  margin: 0px 0px 0px 35px;
+  font-size: 14px;
+
+  button {
+    text-decoration: underline;
+    background-color: unset;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+
+.input-search-box {
+  input {
+    border: 1px solid #ccc;
+    font-size: 12px;
+    height: 26px;
+    padding: 4px 20px;
+    position: absolute;
+    width: 50%;
+    border-radius: 3px;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-search {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    background: #5899ca;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+//history timeline
+.timeLineContainer {
+  // max-height: 80vh;
+  // height: 60vh;
+
+  /* Example height */
+  // overflow-y: auto;
+  /* Enable vertical scrollbar */
+  scrollbar-width: thin;
+  /* Set the width of the scrollbar to thin */
+  scrollbar-color: #888 #f1f1f1;
+  /* Set the color of the thumb and track */
+
+  /* WebKit (Chrome, Safari) */
+  &::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 12px;
+    /* Width of the scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 12px;
+    /* Track color */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+    /* Thumb color */
+    border-radius: 12px;
+    /* Rounded corners */
+  }
+
+  /* Optional: Hide scrollbar track in Firefox */
+  scrollbar-color: #b3b3b3 #f1f1f1;
+  /* Thumb and track color */
+
+  /* Additional styles */
+  // box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+  // rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  border-radius: 12px;
+}
+
+.loadMoreButton {
+  transition: all 0.2s ease;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: rgb(197, 192, 192);
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // position: absolute;
+  top: 100%;
+  padding: 0px 12px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(137, 137, 137);
+    color: #fff;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+}
+
+.endHistoryNote {
+  opacity: 0.8;
+  color: #ccc;
+}
+
+
+
+.dialogScrollContent {
+  max-height: 80vh;
+  overflow-x: hidden;
+  width: 100%;
+  overflow-y: auto;
+  min-height: 100%;
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #a3a3a3;
+  }
+}
+
+.historyLogItem {
+  opacity: 0.6;
+}
+
+.notePaperHistoryLog {
+  &>div>p {
+    margin: unset !important;
+  }
+
+  padding: 4px 8px;
+  background-color: #fbfbe9;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+  rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  & .ql-editor {
+    padding: 6px 8px;
+  }
+
+
+}
+
+.ql-container.ql-snow .ql-editor {
+
+  min-height: 32vh;
+}
+
+.loadMoreStaffBtn {
+  transition: all 0.2s ease;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: rgb(197, 192, 192);
+  margin-top: 4px;
+  padding: 0px 12px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(137, 137, 137);
+    color: #fff;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+}
+
+.taskAppBar {
+  position: relative;
+  justify-content: center;
+  z-index: 10 !important;
+
+  .kanbanFilter {
+    position: absolute;
+    top: 1;
+    right: 2px;
+
+
+    .filterButton {
+      transition: all linear 0.1s ease !important;
+      background-color: #2d5f88;
+      color: white !important;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2px !important;
+
+      &:hover {
+        opacity: 0.8;
+        transition: all linear 0.1s ease !important;
+      }
+    }
+
+    .filterPopup {
+      position: absolute;
+      top: 102%;
+      background: #ffffff;
+      right: 0;
+      // left: "0",
+      box-shadow: var(--elevation-z8);
+      border: 1px solid #a4c7e2;
+      z-index: 19;
+      width: 320px;
+
+      .filterContent {
+        max-height: 480px;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          border-radius: 10px;
+          background-color: #ffffff;
+        }
+
+        &::-webkit-scrollbar {
+          width: 4px;
+          // display: none;
+          background-color: #ffffff;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+          background-color: #a3a3a3;
+        }
+
+        .criteriaWrapper {
+          .criteriaName {}
+
+        }
+
+        .filterFieldWrapper {
+          display: flex;
+          align-items: center;
+          justify-self: flex-start;
+
+          .filterField {
+            margin: unset !important;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+//subtask scss by diayti
+.addMoreSubTaskBtn {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: rgb(197, 192, 192);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: gray;
+    color: #fff;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+}
+
+.subTaskItem {
+  border-left: 1px dashed green;
+  padding-left: 12px;
+  margin-bottom: 8px;
+
+  .subTaskName {
+    .subTaskNameField {
+      width: 100%;
+      padding: 2px 0px 2px;
+      border: 0px !important;
+      border-bottom: 1px solid #ccc !important;
+      outline: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  &+.subTaskItem {
+    margin-top: 16px;
+  }
+
+  .MuiIconButton-label {
+    // color: #1c5a83;
+    color: #2f4f4f;
+  }
+
+  .linearProgressWrapper {
+    // background-color: rgb(178, 253, 178) !important;
+
+    .linecomplete {
+      &>div {
+        background-color: #39de36;
+      }
+    }
+
+    .line {
+      &>div {
+        background-color: #87e490;
+      }
+    }
+  }
+
+  .detailItemWrapper {
+    border-radius: 6px;
+    padding: 0 8px;
+    padding-right: 0px;
+
+    transition: all linear 0.05s;
+
+    .detailNameFieldWrapper {
+      width: 100%;
+
+      .detailNameField {
+        background-color: transparent;
+        border: unset;
+        outline: unset;
+
+        &:focus {
+          border-bottom: 1px solid #ccc;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: #efefef;
+      // background-color: #091e420a;
+      transition: all linear 0.05s;
+
+      .actionContainer {
+        // display: flex;
+
+        .iconWrapper {
+          .subTaskDetailIcon {
+            width: 14px;
+            color: #000000;
+
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .actionContainer {
+      // display: none;
+
+      .iconWrapper {
+        cursor: pointer;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+        .subTaskDetailIcon {
+          width: 14px;
+          color: #616161;
+
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .subTaskActions {
+    align-items: flex-start;
+    height: 100%;
+
+    .addSubTaskDetailButton {
+      width: 18px;
+      color: green;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .editSubTaskButton {
+      width: 18px;
+      color: rgb(0, 13, 128);
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .deleteSubTaskButton {
+      width: 18px;
+      color: red;
+      cursor: pointer;
+      padding: 4px;
+    }
+  }
+}
+
+//end of subtask scss by diayti
+
+//choose multiple project scss
+.scrollContentPopoverChooseMultipleProject {
+  max-height: 280px;
+  overflow-y: auto;
+  min-width: 280px;
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    // display: none;
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #a3a3a3;
+  }
+}
+
+//CHIP CARD DISPLAY SELECTED PROJECT
+.taskScreenTitleWrapper {
+  .taskScreenTitle {
+    text-wrap: nowrap;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: unset;
+    border: none;
+    outline: unset;
+    color: #717276;
+    text-transform: uppercase;
+  }
+
+  .projectChipContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all ease 0.05s;
+
+    .projectChip {
+      background-color: #3e8383;
+      margin: 1.2px !important;
+      width: fit-content;
+      padding: 2px 6px;
+      border-radius: 6px;
+      padding-right: 2px;
+      transition: all linear 0.02s;
+
+      .projectChipName {
+        font-size: 14px;
+        line-height: unset !important;
+      }
+
+      .projectChipIcon {
+        cursor: pointer;
+        transition: all linear 0.02s;
+        border-radius: 50px;
+
+        &:hover {
+          background-color: #8f8f8f;
+        }
+      }
+
+      &+.projectChip {
+        // margin-left: 4px !important;
+        // margin-top: 2px !important;
+      }
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.borderThrough {
+  border-bottom: 1px solid #ccc;
+  color: #878787;
+  font-size: 13.4px;
+  text-align: center;
+}
+
+.borderThrough2 {
+  border-bottom: 1px solid #ccc;
+  color: #878787;
+  font-size: 13.4px;
+  padding-left: 4px;
+  text-align: left;
+}
+
+.MuiTableHead-root {
+  .MuiTableRow-head {
+    z-index: 0 !important;
+    position: relative;
+  }
+}
+
+.stickyMuiTableHead .MuiTableHead-root {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  background-color: #4276a4 !important;
+} 
+
+.integratedTaskHistory {
+  border-radius: 8px;
+  background-color: #f6fffa;
+  padding-left: 8px;
+  // position: relative;
+
+  // max-height: 580px;
+  // overflow-y: auto;
+  // overflow-x: hidden;
+
+  // &::-webkit-scrollbar-track {
+  //   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  //   border-radius: 10px;
+  //   background-color: #ffffff;
+  // }
+
+  // &::-webkit-scrollbar {
+  //   width: 4px;
+  //   // display: none;
+  //   background-color: #ffffff;
+  // }
+
+  // &::-webkit-scrollbar-thumb {
+  //   border-radius: 10px;
+  //   // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  //   background-color: #a3a3a3;
+  // }
+
+  .timeLineContainer {
+
+    .MuiTimeline-root {
+      margin: unset !important;
+      padding: unset !important;
+    }
+  }
+}
+
+.taskFilterV4 {
+  background-color: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14), 0px 1px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  .mainBarFilter {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+
+  }
+}
+
+.filterButtonV4 {
+  color: white;
+  position: relative;
+  transition: all ease-in 0.1s;
+
+  .filterRotateIcon {
+    transition: all ease-in 0.1s;
+
+    &.onRotate {
+      transform: rotate(180deg);
+    }
+  }
+
+  .changedFieldDot {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    border-radius: 50%;
+    color: #3f6792;
+    background-color: white;
+  }
+}
+
+.styledThinScrollbar {
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    // display: none;
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #a3a3a3;
+  }
+}
+
+.taskTableRowInfo {
+  cursor: pointer;
+  transition: all linear 0.1sF;
+
+  &:hover {
+    color: darkgreen;
+    // text-decoration: underline;
+  }
+}

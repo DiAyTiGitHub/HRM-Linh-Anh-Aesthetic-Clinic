@@ -1,0 +1,138 @@
+// Define theme color
+$theme-color: #1b629f;
+$theme-light: #ccc; // Lighter shade of theme color
+$theme-dark: darken($theme-color, 10%); // Darker shade of theme color
+
+.main-process-container {
+  width: 100%;
+  // max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
+  padding-bottom: 48px;
+
+
+  .step-container {
+    display: flex;
+    justify-content: space-between;
+    // margin-top: 70px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      background: $theme-light;
+      height: 4px;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: $theme-color;
+      height: 4px;
+      width: var(--width);
+      top: 50%;
+      transition: 0.4s ease;
+      transform: translateY(-50%);
+      left: 0;
+    }
+
+    .step-wrapper {
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+    }
+
+
+    .step-style {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      border: 3px solid $theme-light;
+      transition: 0.4s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .step-count {
+        font-size: 19px;
+        color: $theme-light;
+
+        @media (max-width: 600px) {
+          font-size: 16px;
+        }
+      }
+
+      &.completed {
+        border-color: $theme-color;
+
+        .step-count {
+          color: rgb(37, 37, 199);
+        }
+      }
+
+
+    }
+
+    .steps-label-container {
+      position: absolute;
+      top: 66px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      .step-label {
+        font-size: 14px;
+        color: $theme-color;
+        text-align: center;
+
+        @media (max-width: 600px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  // margin: 0 -15px;
+  margin-top: 100px;
+}
+
+.button-style {
+  border-radius: 4px;
+  border: 0;
+  background: $theme-color;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8px;
+  width: 90px;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:disabled {
+    background: $theme-light;
+    color: #000000;
+    cursor: not-allowed;
+  }
+}
+
+.check-mark {
+  font-size: 26px;
+  font-weight: 600;
+  color: $theme-color;
+  transform: scaleX(-1) rotate(-46deg);
+}

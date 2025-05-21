@@ -1,0 +1,695 @@
+{
+  "web_site": "HIVInfo 4.0",
+  "Dashboard": {
+    "dashboard": "Dashboard",
+    "AdministrativeUnit": "Administrative unit",
+    "login": "Login",
+    "logout": "Logout",
+    "profile": "Profile",
+    "analytics": {
+      "title": "Analytics"
+    },
+    "chart": {
+      "amount": "Amount"
+    }
+  },
+  "validation": {
+    "code": "Code field is required!",
+    "value": "Value field is required!",
+    "required": "This field is required",
+    "name": "Name not entered!",
+    "email": "Email not entered!",
+    "confirm_password": "Password does not match!",
+    "idNumberInvalid": "The identification number is in an incorrect format!",
+    "idNumber": "The identification number can only contain digits!",
+    "socialInsuranceNumberMatches": "The social insurance number can only contain digits!",
+    "socialInsuranceNumberInvalid": "The social insurance number is in an incorrect format!",
+    "errorPhoneNumber": "The phone number is in an incorrect format!",
+    "typePhoneNumber": "The phone number can only contain numeric characters!",
+    "invalidDate": "The date format is incorrect!"
+  },
+  "color": {
+    "title": "Color",
+    "code": "Code",
+    "value": "Value",
+    "placehoderCode": "Enter the color code",
+    "placehoderValue": "Enter the color value"
+  },
+  "civilServantType": {
+    "title": "Civil Servant Type",
+    "code": "Code",
+    "name": "Name",
+    "languageKey": "Language Key"
+  },
+  "color": {
+    "title": "Color",
+    "code": "Code",
+    "value": "Value",
+    "placehoder_code": "Type code of color",
+    "placehoder_value": "Type value of color"
+  },
+  "calendar": {
+    "title": "Calendar",
+    "addEvent": "Add Event",
+    "name": "Name",
+    "languageKey": "Language Key"
+  },
+  "budget": {
+    "title": "Manage budget",
+    "name": "Name",
+    "currency": "Current",
+    "code": "Code",
+    "openingBalance": "Opening Balance",
+    "endingBalance": "Ending Balance",
+    "description": "Description"
+  },
+  "leaveType": {
+    "name": "Leave Type Name",
+    "code": "Leave Type Code",
+    "description": "Leave Type Description"
+  },
+  "budgetCategory": {
+    "title": "Budget category",
+    "name": "Name",
+    "code": "Code",
+    "description": "Description",
+    "validation": {
+      "nameRequired": "Name is required.",
+      "budgetCategoryRequired": "Opening balance is required.",
+      "openingBalanceInvalid": "Opening balance must be a valid number.",
+      "openingBalanceMin": "Opening balance must be at least 0."
+    }
+  },
+  "voucher": {
+    "title": "Voucher",
+    "voucherDate": "Voucher Date",
+    "totalAmount": "Total Amount",
+    "voucherCode": "Voucher Code",
+    "voucherType": "Voucher Type",
+    "typeIncome": "Income",
+    "typeExpense": "Expense",
+    "linkedBudget": "Linked Budget",
+    "budgetCategory": "Budget category"
+  },
+  "voucherItem": {
+    "amount": "Amount",
+    "note": "Note",
+    "title": "List Voucher Item",
+    "budgetCategory": "Budget category"
+  },
+  "navigation": {
+    "kpi": "KPI",
+    "kpi-result": "KPI Result",
+    "statisticsTimekeeping": "Statistics by timekeeping",
+    "salaryTemplate": {
+      "title": "Payroll template"
+    },
+    "salaryResult": {
+      "title": "Payroll"
+    },
+    "advancePayment": {
+      "title": "Advance salary payment"
+    },
+    "salaryStaffPayslip": {
+      "title": "Payslip"
+    },
+    "salaryUnit": {
+      "title": "Payroll time unit"
+    },
+    "salaryArea": {
+      "title": "Salary region"
+    },
+    "salaryType": {
+      "title": "Salary data group"
+    },
+    "salaryConfig": {
+      "title": "Salary configuration"
+    },
+    "salaryitem": "Salary components",
+    "dashboard": {
+      "title": "Dashboard",
+      "statisticsGeneral": "General statistics"
+    },
+    "calendar": "Calendar",
+    "profile": "Profile",
+    "administrative_unit": "Administrative unit",
+    "statisticsByProject": "Statistics by project",
+    "statisticsByTimeSheet": "Statistics by timesheet",
+    "salary": "Salary and bonus",
+    "salaryIncrement": "Salary increment",
+    "academic": "Academic",
+    "directory": "Directory",
+    "patient": "Patient",
+    "color": "Color",
+    "certificate": "Certificate",
+    "occupation": "Occupation",
+    "ethnicity": "Ethnicity",
+    "HumanResourcesInformation": "Human resources information",
+    "civilServantType": "Civil servant type",
+    "reward": "Reward",
+    "budget": {
+      "title": "Manage budget",
+      "budget": "Budget",
+      "voucher": "Voucher",
+      "budgetCategory": "Budget category",
+      "report": "Report"
+    },
+    "organization": {
+      "title": "Oranization",
+      "companyInfo": "Company info",
+      "unit": "Unit",
+      "workplace": "Workplace",
+      "organizationalChart": "Organizational chart",
+      "diagramList": "Diagram list",
+      "departmentType": "Department type",
+      "rankTitle": "Rank",
+      "positionTitleV2": "Job title",
+      "staffIpKeeping": "Staff timekeeping outside the company",
+      "positionRole": "Default permission group",
+      "select": "Select unit"
+    },
+    "staffIpKeeping": {
+      "title": "Staff timekeeping outside the company"
+    },
+    "staff": {
+      "title": "Staff",
+      "all": "All",
+      "officialMembers": "Official members",
+      "expertAdvice": "Expert advice",
+      "intern": "Intern",
+      "currentEmployees": "Current employees",
+      "staffLabourAgreement": "Employment contract",
+      "introduceCost": "Introduce cost",
+      "staffDocumentItem": "Employee documents",
+      "hr-document-template": "Hr Document template",
+      "transfer": {
+        "title": "Transfer",
+        "workingProcess": "Working process"
+      },
+      "position": "Work position",
+      "contractManagement": {
+        "title": "Contract Management",
+        "listOfContract": "List of contracts",
+        "contractAddendum": "Contract addendum",
+        "listOfExpiredContract": "List of expire contracts"
+      },
+      "disciplinaryManagement": {
+        "title": "Disciplinary Management",
+        "listOfDiscipline": "List of disciplines",
+        "reportingDiscipline": "Reporting discipline"
+      },
+      "rewardManagement": {
+        "title": "Reward Management",
+        "listAward": "List of awards",
+        "reportingAward": "Reporting award"
+      },
+      "resignationManagement": {
+        "title": "Resignation Management",
+        "registerResignation": "Register resignation",
+        "listOfLeavedEmployee": "List of leaved employee",
+        "listWaitLeaveEmployee": "List of wait leave employee"
+      },
+      "suspensionManagement": {
+        "title": "Suspension Management",
+        "listOfRegistrationSuspended": "List of suspended registrations",
+        "listOfRegistrationRework": "List of rework registrations",
+        "reportingRework": "Report rework employees"
+      },
+      "relative": {
+        "title": "Relative",
+        "listOfRelative": "List of relatives"
+      },
+      "dependent": {
+        "title": "Rependent",
+        "dependent": "List of dependents",
+        "totalDependents": "Total dependents"
+      },
+      "applicantProfile": "Applicant's resume",
+      "staffManagement": "Human resource management"
+    },
+    "payroll": {
+      "title": "Payroll",
+      "period": "Payroll period",
+      "all": "All",
+      "category": "Salary categories"
+    },
+    "recruitment": {
+      "title": "Recruitment",
+      "request": "Recruitment request",
+      "plan": "Recruitment plan",
+      "period": {
+        "title": "Recruitment period",
+        "create": "Create recruitment period",
+        "edit": "Edit recruitment period"
+      },
+      "profile": "Profile",
+      "exam": "Exam",
+      "successfulProfile": "Successful profile",
+      "category": "Category recruitment"
+    },
+    "timeKeeping": {
+      "title": "Time keeping",
+      "attendance": "Attendance",
+      "holiday": "Holiday"
+    },
+    "staffSalaryItemValue": {
+      "title": "Staff salary item value"
+    },
+    "work": {
+      "title": "Working",
+      "timesheet": "Timesheet",
+      "timesheetDetails": "Timesheet",
+      "project": "Project",
+      "task": "Task",
+      "workingStatus": "Working status",
+      "shiftWork": "Shift work"
+    },
+    "administration": {
+      "title": "Administration",
+      "user": "User Administration",
+      "role": "Roles",
+      "personalInfo": "Personal information",
+      "change_password": "Change password",
+      "org_info": "Organization information",
+      "profile": "Profile infomation",
+      "accounts": "Accounts",
+      "generalCatalog": "General catalog",
+      "employeeStatus": "Employee status",
+      "workStatus": "Work status",
+      "assets": "Assets",
+      "civilServant": "Civil servant",
+      "certificate": "Certificate",
+      "qualification": "Qualification",
+      "trainingInstitution": "Training instruction",
+      "trainingType": "Training type",
+      "academicTitle": "Academic title",
+      "fieldOfStudy": "Field of study",
+      "honoraryTitle": "Honorary title",
+      "organization": "Organization",
+      "administrativeUnit": "Administrative unit",
+      "country": "Nation",
+      "ethnicity": "Ethnicity",
+      "religion": "Religion",
+      "profession": "Profession",
+      "bank": "Bank"
+    },
+    "personnel": {
+      "pending": "Pending applicants",
+      "employeeOnboarding": "Employee onboarding",
+      "failingWord": "Failing work",
+      "candidateWorking": "Candidate working",
+      "employeesReporting": "Employees reporting",
+      "listContract": "List contract",
+      "contractManagement": "Contract management",
+      "addendumContract": "Addendum contract"
+    },
+    "timeSheet": {
+      "workSchedule": "Work schedule",
+      "periodSetting": "Period setting",
+      "scheduleManager": "Schedule manager",
+      "leaveManagement": "Leave management",
+      "leaveList": "Leave list",
+      "maternityLeave": "Maternity leave",
+      "aggregateData": "Aggregate data",
+      "analyzeData": "Analyze data",
+      "timesheetTable": "Timesheet table",
+      "categoryManagement": "Category timekeeping",
+      "shiftWork": "Shift work",
+      "leaveType": "Leave type",
+      "overtimeType": "Overtime type",
+      "holidayList": "Holiday list"
+    },
+    "insurance": {
+      "root": "Insurance",
+      "insuranceType": "Insurance type",
+      "insuranceRegion": "Insurance region",
+      "insregionAdminunit": "Insregion adminunit",
+      "salaryInsuranceRegion": "Salary insurance region",
+      "insuranceRate": "Insurance rate",
+      "staffSocialInsurance": "Employee insurance",
+      "staffHasInsurance": "Employee has insurance"
+    },
+    "list": "List",
+    "category": {
+      "title": "Category",
+      "staff": {
+        "title": "Staff category",
+        "typeDepartments": "Type departments",
+        "departments": "Departments",
+        "resource": "Resource",
+        "listTitles": "List titles",
+        "listPositions": "Position",
+        "employeesType": "Employees type",
+        "relationshipType": "Relationship type",
+        "awardType": "Award type",
+        "leaveReasons": "Leave reasons",
+        "suspendedType": "Suspended type",
+        "transferType": "Transfertype",
+        "typeContract": "Type contract",
+        "typeAddendum": "Type addendum",
+        "reasonRefusal": "Reason refusal",
+        "disciplinaryReason": "Disciplinary reason",
+        "departmentGroup": "Department group"
+      }
+    }
+  },
+  "allowanceType": {
+    "title": "Type of allowance"
+  },
+  "discipline": {
+    "title": "Disciplinary action"
+  },
+  "general": {
+    "you_are_here": "You are here:",
+    "home": "Home",
+    "year": "Year",
+    "month": "Month",
+    "week": "Week",
+    "day": "Day",
+    "button": {
+      "add_income": "Add income",
+      "add_expense": "Add expense",
+      "add": "Add",
+      "delete": "Delete",
+      "save": "Save",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "select": "Select",
+      "filter": "Filter",
+      "search": "Search",
+      "back": "Go back",
+      "update": "Update",
+      "select_file": "Choose file",
+      "size": "Size",
+      "file_name": "File name",
+      "close": "Close",
+      "remove": "Remove",
+      "upload": "Upload",
+      "importExcel": "Import Excel",
+      "send": "Send",
+      "resetPassWord": "Reset PassWord",
+      "deselect": "Deselect",
+      "export_excel": "Export Excel",
+      "import_excel": "Import Excel",
+      "expand": "Expand",
+      "collapse": "Collapse"
+    },
+    "popup": {
+      "select": "Select",
+      "code": "Code",
+      "name": "Name"
+    },
+    "action": "Action",
+    "enter_search": "Enter search keyword",
+    "rowsPerPage": "Rows per page:",
+    "required": "This field is required",
+    "language": "Language",
+    "emptyDataMessageTable": "No data",
+    "empty_file": "Empty file",
+    "totalRows": "Total rows:",
+    "gotoPage": "Go to page:",
+    "to_homepage": "Go to Dasshboard"
+  },
+  "gender": {
+    "transgender-to-female": "Transgender Female",
+    "transgender-to-male": "Transgender Male",
+    "non-binary": "Non Binary",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "not-disclosed": "Not Disclosed"
+  },
+  "certificate": {
+    "title": "Certificate",
+    "code": "Code",
+    "name": "Name",
+    "type": "Type"
+  },
+  "toast": {
+    "error": "Something went wrong, please try again!",
+    "delete_success": "Deleted successfully!",
+    "please_select": "Please select at least one item!",
+    "duplicate_code": "This code is being used!",
+    "update_success": "Updated successfully!",
+    "add_success": "Added successfully!",
+    "user_exist": "Username is exist!",
+    "change_password_success": "Password changed!",
+    "change_password_failure": "Error when changing password!",
+    "load_fail": "Error occurs when loading data, please try later!"
+  },
+  "administrative_unit": {
+    "title": "Administrative Unit",
+    "code": "Code",
+    "name": "Name",
+    "description": "Description",
+    "parent": "Parent Unit",
+    "select": "Select"
+  },
+  "ethnicity": {
+    "title": "Ethnicity",
+    "code": "Code",
+    "name": "Name",
+    "description": "Description"
+  },
+  "occupation": {
+    "title": "Occupation",
+    "code": "Code",
+    "name": "Name",
+    "description": "Description"
+  },
+  "risk_behavior": {
+    "title": "Risk Behavior",
+    "code": "Code",
+    "name": "Name",
+    "description": "Description"
+  },
+  "risk_population": {
+    "title": "Risk Population",
+    "code": "Code",
+    "name": "Name",
+    "description": "Description"
+  },
+  "transmission_route": {
+    "title": "Transmission Route",
+    "code": "Code",
+    "name": "Name",
+    "description": "Description"
+  },
+  "regimen": {
+    "title": "Regimen",
+    "regimen_line": "Regimen line",
+    "regimen_name": "Regimen name",
+    "start_date": "Start date",
+    "end_date": "End Date",
+    "end_reason": "Ending reason",
+    "select": "Select Regimen"
+  },
+  "confirm_test": {
+    "title": "COnfirmation test",
+    "list": "List of Confirmation test"
+  },
+  "confirm_dialog": {
+    "delete": {
+      "title": "Delete Confirmation",
+      "text": "Are you sure you want to delete this item?",
+      "agree": "Agree",
+      "cancel": "Cancel"
+    },
+    "delete_list": {
+      "title": "Delete Confirmation",
+      "text": "Are you sure you want to delete these items?",
+      "agree": "Agree",
+      "cancel": "Cancel"
+    },
+    "confirm_close": {
+      "title": "Cancel Confirmation",
+      "text": "Are you sure you want to cancel?",
+      "agree": "Agree",
+      "cancel": "Cancel"
+    },
+    "confirm_download_excel": {
+      "title": "Confirm Excel Download",
+      "text": "Do you want to download? This may take a few minutes.",
+      "agree": "Confirm",
+      "cancel": "Cancel"
+    }
+  },
+  "listweek": {
+    "mon": "Monday",
+    "tus": "Tuesday",
+    "wed": "Wednesday ",
+    "thu": "Thursday",
+    "fri": "Friday",
+    "sat": "Saturday",
+    "sun": "Sunday"
+  },
+  "staff": {
+    "title": "Staff",
+    "all": "All",
+    "working": "Working",
+    "quitJob": "Quit Job",
+    "officialMembers": "Official Members",
+    "expertAdvice": "Expert Advice",
+    "intern": "Intern",
+    "unpaidleave": "Unpaid Leave",
+    "applicantProfile": "Hồ sơ ứng viên"
+  },
+  "timeSheet": {
+    "title": "Timesheet",
+    "addTimeSheet": "Add timesheet",
+    "noTimeSheet": "No timesheet",
+    "workingDate": "Working date",
+    "totalHours": "Total Hours",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "description": "Description",
+    "employee": "Employee",
+    "estimateHour": "Estimat hour",
+    "project": "Project",
+    "activity": "Activity",
+    "shiftWork": "Shift Work",
+    "workingStatus": "Working status",
+    "approveStatus": "Approve status",
+    "details": "Details",
+    "duration": "Duration",
+    "workingItemTitle": "Working item title",
+    "activityName": "Activity name",
+    "activityCode": "Activity code",
+    "createDate": "Create date",
+    "priority": "Priority",
+    "chooseActivity": "Choose activity",
+    "nameTask": "Name task"
+  },
+  "staffWorkSchedule": {
+    "title": "Staff Work Schedule Title",
+    "code": "Staff Work Schedule Code",
+    "name": "Staff Work Schedule Name"
+  },
+  "sign_in": {
+    "title": "Login"
+  },
+  "sign_up": {
+    "title": "Register",
+    "title_form": "Register an account",
+    "info_login": "Login information"
+  },
+  "health_org": {
+    "title": "Health unit",
+    "parent": "Parent health unit",
+    "select": "Select health unit",
+    "type": "Health unit type",
+    "name": "Org name",
+    "code": "Org code",
+    "warning_parent": "Warning parent",
+    "administrative_unit": "Administrative unit",
+    "level": "Level"
+  },
+  "user": {
+    "title": "User",
+    "personInfo": "User infomation",
+    "displayName": "Display name",
+    "gender": "Gender",
+    "username": "User Name",
+    "email": "Email",
+    "password": "Password",
+    "re_password": "Repeat Password",
+    "change_pass": "Change Password",
+    "new_password": "New password",
+    "remember_me": "Remember me",
+    "password_match_message": "Please make sure your password match",
+    "password_message": "Your password is too short",
+    "active": "Active",
+    "usedByEmployee": "Used by employee",
+    "role": {
+      "title": "Roles",
+      "name": "Name",
+      "authority": "Authority",
+      "createdBy": "Created By"
+    },
+    "org": {
+      "title": "Health unit",
+      "type": "Health unit type"
+    }
+  },
+  "role": {
+    "title": "Roles",
+    "name": "Name",
+    "authority": "Authority",
+    "createdBy": "Created By"
+  },
+  "tool_tip": {
+  },
+  "task": {
+    "title": "Task",
+    "table": "Table",
+    "status": "Status",
+    "byPriority": "By Priority",
+    "name": "Name Task",
+    "kanBan": "kanBan",
+    "group": "Group",
+    "adds": "Add Task",
+    "members": "Menbers",
+    "priority": "Priority",
+    "info": "Info",
+    "acitivity": "Acitivity",
+    "assignee": "Assignee",
+    "subTask": {
+      "title": "CheckList",
+      "addCheckList": "Add CheckList",
+      "add": "Add",
+      "delete": "Delete",
+      "addAItem": "Add a Item"
+    },
+    "time": {
+      "title": "Time",
+      "startTime": "Start",
+      "endTime": "End",
+      "estimateHour": "Estimate Hour"
+    },
+    "action": "Action",
+    "comment": "Comment",
+    "list": {
+      "project": "Project",
+      "task": "Task",
+      "status": "Status",
+      "staff": "Staff",
+      "priority": "Priority"
+    }
+  },
+  "kpi": {
+    "action": "Action",
+    "name": "KPI Name",
+    "code": "KPI Code",
+    "description": "KPI Description",
+    "kpi-item": {
+      "title": "Add item KPI",
+      "name": "Item KPI Name",
+      "code": "Item KPI Code",
+      "weight": "Item KPI Weight",
+      "used_for_salary": "Is KPI Used for Salary Calculation?"
+    },
+    "kpi-result": {
+      "name-staff": "Employee Name",
+      "name-kpi": "KPI Name",
+      "kpi-result-item": {
+        "value": "KPI Value"
+      }
+    }
+  },
+  "rewardHistory": {
+    "title": "Reward History",
+    "organization": "Awarding Organization",
+    "rewardDate": "Year of Award",
+    "rewardType": "Type of Reward",
+    "department": "Awarding Department",
+    "file": "Attached File"
+  },
+  "disciplineHistory": {
+    "title": "Disciplinary History",
+    "organization": "Disciplining Organization",
+    "disciplineDate": "Disciplinary Year",
+    "disciplineType": "Type of Disciplinary Action",
+    "department": "Department Involved",
+    "file": "Attached File"
+  }
+}

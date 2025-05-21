@@ -1,0 +1,102 @@
+#root,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  font-family: $font-family-base;
+}
+
+div,
+a {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.card-title {
+  color: $text-body !important;
+  font-weight: 500;
+}
+
+.layout1,
+.layout2,
+.MuiPaper-root,
+.MuiTableCell-body,
+.egret-customizer {
+  color: $text-body !important;
+}
+
+.MuiAutocomplete-popper {
+  .MuiAutocomplete-listbox {
+    max-height: 300px;
+  }
+}
+
+.MuiTabs-root.Mui-tabRootCustom {
+
+  & .MuiButtonBase-root.MuiTab-root {
+    text-transform: none !important;
+  }
+
+  & .MuiTab-textColorPrimary {
+    margin: 0 !important;
+    padding: 4px 16px !important;
+  }
+
+  & .MuiTab-textColorPrimary.Mui-selected {
+    color: #4276A4 !important;
+    font-weight: 0 !important;
+  }
+
+  & .MuiTab-wrapper {
+    flex-direction: row !important;
+    gap: 4px;
+  }
+
+  & .MuiSvgIcon-root {
+    width: 20px !important;
+    margin-bottom: 1px !important;
+  }
+
+  & .MuiTab-labelIcon {
+    min-height: 0 !important;
+  }
+
+  .MuiTabs-indicator {
+    bottom: unset !important;
+    background-color: #4276A4 !important;
+  }
+}
+
+.MuiTabs-root.bottom-0 {
+  .MuiTabs-indicator {
+    bottom: 0 !important;
+    height: 3px;
+  }
+}
+
+.Mui-tabCustom {
+  padding: 0 !important;
+}

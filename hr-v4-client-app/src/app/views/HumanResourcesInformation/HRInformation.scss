@@ -1,0 +1,40 @@
+.tabStaffHR {
+    transition: all linear 0.05s;
+    max-width: unset !important;
+    color: darkslategrey !important;
+    opacity: 0.6;
+
+    &.Mui-selected {
+        opacity: 1;
+        color: darkslategrey !important;
+    }
+
+    & .MuiTab-wrapper {
+        text-wrap: nowrap;
+    }
+
+    .tabStaffLabel {
+        display: none;
+        padding: unset !important;
+        margin: unset !important;
+    }
+
+    &:hover .tabStaffLabel {
+        display: flex;
+    }
+
+    p {
+        margin: unset !important;
+        padding-left: 8px;
+    }
+}
+
+.organizationInfoField {
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    margin-top: unset !important;
+
+    &.hyperLink {
+        color: blue;
+    }
+}

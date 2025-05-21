@@ -1,0 +1,554 @@
+.input-container {
+    transition: all linear 0.1s;
+
+    .MuiInputBase-root {
+        border-radius: 3.2px !important;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+        // border-color: $themeColor;
+        border-color: #ccc;
+        border-width: 1px;
+    }
+
+    .MuiOutlinedInput-root:hover {
+        border-color: $themeColor !important;
+    }
+
+    .MuiOutlinedInput-root.Mui-focused {
+        .MuiOutlinedInput-notchedOutline {
+            border-color: $themeColor;
+            border-width: 1px;
+        }
+    }
+
+    .MuiFormHelperText-contained {
+        margin: 0;
+        margin-top: 4px;
+    }
+
+    .MuiInputBase-input {
+        font-size: 14px;
+        padding-left: 10px !important;
+    }
+
+    .MuiButtonBase-root {
+        padding: 6px;
+    }
+
+    .MuiAutocomplete-endAdornment {
+        right: 0 !important;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    label {
+        font-size: 14px;
+        color: $black !important;
+        transform: unset;
+        position: unset;
+        font-weight: 450;
+    }
+
+    .MuiAutocomplete-root {
+        display: flex;
+        gap: 5px;
+
+        .btn-container {
+            margin-top: 4px;
+            padding: 12px;
+            height: max-content;
+
+            .btn-content {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .MuiInput-formControl {
+        margin-top: 0;
+        background: #ffffff;
+        border: 1px solid $green;
+        border-radius: 3.2px;
+        min-height: 38px;
+        padding: 0 6px !important;
+        height: auto;
+
+        &:has(input:disabled, textarea:disabled) {
+            background-color: rgba(23, 25, 28, 0.1);
+        }
+
+        &.MuiAutocomplete-inputRoot {
+            .MuiAutocomplete-tag {
+                margin: 2px;
+                margin-right: 0;
+                height: 30px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                span {
+                    font-size: 12px;
+                    padding: 0 4px;
+                }
+
+                svg {
+                    height: 16px;
+                    width: 16px;
+                    margin-right: 2px;
+                }
+            }
+
+            input {
+                min-width: 60px;
+                margin: 2px;
+                margin-right: 0;
+                color: $black;
+            }
+        }
+
+        &+.MuiFormHelperText-root {
+            font-size: 11.4px;
+        }
+
+        &::before,
+        &::after {
+            display: none;
+        }
+
+        input,
+        textarea {
+            font-size: 14px;
+            font-weight: 400;
+            padding: 0 !important;
+            resize: both;
+
+            &+div {
+                position: unset;
+
+                button {
+                    padding: 0;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+        &:has(textarea) {
+            padding: 0 !important;
+
+            textarea {
+                padding: 4px 10px !important;
+                line-height: 15px;
+            }
+        }
+    }
+
+    &:has(label) .MuiInput-formControl {
+        margin-top: 4px;
+    }
+
+    &.read-only {
+        .MuiInput-formControl {
+            border-style: dashed;
+        }
+
+        &.date-picker-input {
+            .MuiButtonBase-root.MuiIconButton-root {
+                display: none !important;
+            }
+        }
+    }
+
+    & .read-only {
+        .MuiInput-formControl {
+            border-style: dashed;
+        }
+
+        &.date-picker-input {
+            .MuiButtonBase-root.MuiIconButton-root {
+                display: none !important;
+            }
+        }
+    }
+
+    &.read-only-autocomplete {
+        .MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiAutocomplete-inputRoot.Mui-disabled.Mui-disabled.MuiInputBase-fullWidth.MuiInput-fullWidth.MuiInputBase-formControl.MuiInput-formControl.MuiInputBase-adornedEnd {
+            background-color: $white;
+        }
+
+        .MuiInput-formControl {
+            border-style: dashed;
+
+            .MuiAutocomplete-endAdornment {
+                display: none !important;
+            }
+        }
+    }
+
+    .input-search-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $green;
+        border-radius: 3.2px;
+        overflow: hidden;
+
+        input {
+            width: 100%;
+            max-height: 40px;
+            padding: 5px 7px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            outline: none;
+            border: none;
+            background-color: $green;
+            height: 40px;
+            padding: 0 4px;
+            cursor: pointer;
+            padding: 12px;
+        }
+    }
+
+    &.input-sales-order {
+        max-width: 150px;
+
+        input {
+            text-align: right;
+            font-size: 16px;
+        }
+
+        .MuiInput-formControl {
+            border-top: unset !important;
+            border-left: unset !important;
+            border-right: unset !important;
+            border-radius: unset;
+            border-color: #c2c7ce;
+            min-height: 30px;
+        }
+
+        .MuiInput-formControl.MuiAutocomplete-inputRoot input {
+            min-width: unset;
+        }
+    }
+}
+
+.read-only {
+    & .MuiFormLabel-root {
+        color: rgba(0, 0, 0, 0.87) !important;
+        /* Đảm bảo chữ trong FormLabel luôn màu đen */
+        // font-weight: bold !important; /* Giữ chữ đậm */
+    }
+
+    & .MuiFormControlLabel-label {
+        color: rgba(0, 0, 0, 0.87) !important;
+        /* Đảm bảo chữ trong FormControlLabel luôn màu đen */
+        // font-weight: bold !important; /* Giữ chữ đậm */
+    }
+
+    & .MuiRadio-root {
+        color: rgba(0, 0, 0, 0.87) !important;
+        /* Đảm bảo màu cho radio button */
+    }
+
+    & .MuiOutlinedInput-notchedOutline {
+        border-style: dashed !important;
+        /* Thêm kiểu viền dashed nếu cần */
+    }
+
+    & .MuiInputBase-input {
+        color: rgba(0, 0, 0, 0.87) !important;
+        opacity: 1 !important;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0.87) !important;
+        cursor: text;
+    }
+
+    & .MuiAutocomplete-endAdornment {
+        display: none;
+        /* Ẩn mũi tên dropdown khi readOnly */
+    }
+}
+
+@include media(960px) {
+    .input-container {
+        label {
+            font-size: 12px;
+        }
+
+        .MuiAutocomplete-root {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            .btn-container {
+                margin-top: 5px;
+                padding: 10px;
+
+                .btn-content {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .MuiInput-formControl {
+            margin-top: 2px;
+            padding: 0 4px !important;
+            min-height: 35px;
+
+            &.MuiAutocomplete-inputRoot {
+                .MuiAutocomplete-tag {
+                    height: 20px;
+
+                    span {
+                        font-size: 11px;
+                        padding: 0 5px;
+                    }
+
+                    svg {
+                        height: 14px;
+                        width: 14px;
+                    }
+                }
+            }
+
+            input,
+            textarea {
+                font-size: 13px;
+
+                &+div button svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+
+        .input-search-container {
+            input {
+                height: 35px;
+                padding: 4px;
+            }
+
+            button {
+                height: 35;
+            }
+        }
+    }
+}
+
+.label-container {
+    font-size: 14px;
+    font-weight: 450;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.old-label {
+    font-size: 1rem;
+}
+
+.editor-container {
+    &:hover {
+        .ql-toolbar.ql-snow {
+            // border: 1px solid $themeColor;
+            border: 1px solid #000;
+        }
+
+        .ql-container.ql-snow {
+            // border: 1px solid $themeColor;
+            border: 1px solid #000;
+        }
+    }
+
+    // .ql-toolbar.ql-snow {
+    //     border: 1px solid $themeColor;
+    // }
+
+    // .ql-container.ql-snow {
+    //     border: 1px solid $themeColor;
+    // }
+}
+
+// CSS CALENDAR
+.MuiPickersToolbar-toolbar {
+    // background-color: $themeColor !important;
+    background-color: #0c67be !important;
+    height: 80px !important;
+}
+
+.PrivateTabIndicator-root-252.PrivateTabIndicator-colorSecondary-254.MuiTabs-indicator {
+    background-color: white !important;
+}
+
+.MuiTypography-root.MuiPickersToolbarText-toolbarTxt.MuiPickersToolbarText-toolbarBtnSelected.MuiTypography-h4 {
+    font-size: 22px !important;
+}
+
+.MuiTypography-root.MuiPickersToolbarText-toolbarTxt.MuiTypography-h4 {
+    font-size: 22px !important;
+}
+
+.MuiPickersDay-daySelected:hover {
+    background-color: $themeColor !important;
+}
+
+.MuiPickersDay-daySelected {
+    background-color: $themeColor !important;
+}
+
+.MuiPickersToolbarText-toolbarTxt {
+    color: $white !important;
+}
+
+.MuiPickersDay-current {
+    color: $themeColor !important;
+
+    &.MuiPickersDay-daySelected {
+        color: $white !important;
+    }
+}
+
+.MuiPickerDTTabs-tabs {
+    color: #fff !important;
+    background-color: #08549c !important;
+}
+
+// CSS CHECKBOX
+.MuiCheckbox-colorSecondary.Mui-checked {
+    color: $themeColor !important;
+}
+
+.MuiRadio-colorSecondary.Mui-checked {
+    color: $themeColor !important;
+}
+
+.MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputMultiline.MuiOutlinedInput-inputMultiline.MuiInputBase-inputMarginDense.MuiOutlinedInput-inputMarginDense {
+    padding-left: unset !important;
+}
+
+// CSS TABLE
+.commonTableContainer {
+    padding-right: 2px;
+    margin-top: 2px;
+    overflow-x: auto;
+    // overflowY: hidden;
+
+    .stickyCell {
+        position: sticky;
+        z-index: 999;
+        left: 0;
+        background-color: #f6f6f6;
+        box-shadow: 0 0 0 1px #ccc;
+    }
+
+    .staffCode-column {
+        left: 40px;
+        min-width: 120px;
+        z-index: 104;
+    }
+
+    .minWidthColumn {
+        min-width: 120px;
+    }
+
+    /* styles.css */
+    .rotateVertical {
+        transform: rotate(270deg);
+        // writing-mode: vertical-lr;
+        text-align: center;
+    }
+
+    .lastRowCellStyle {
+        background-color: #fffacd !important; // Light yellow for "Tổng tiền"
+        font-weight: bold;
+        // text-align: center;
+        color: #000;
+    }
+
+    .stickyHeader {
+        // position: sticky;
+        // z-index: 999;
+    }
+
+    .commonTable {
+        table-layout: auto !important;
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+
+        & td {
+            border: 1px solid #ccc;
+            height: 38px;
+        }
+
+        .tableHeader {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 8px;
+
+            & th {
+                border: 1px solid #ccc;
+                padding: 8px 0 8px 4px;
+            }
+        }
+    }
+}
+
+.no-wrap-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.verticalTableContainer {
+    // padding: 16px;
+    overflow-x: auto;
+    /* Allow horizontal scrolling if needed */
+
+    .vertical-table {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        /* Ensure the table spans the full width */
+        border: 1px solid #ccc;
+
+        .header-column,
+        .data-column {
+            flex: 1;
+            /* Distribute columns equally */
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ccc;
+
+            &:last-child {
+                border-right: none;
+                /* Remove the border from the last column */
+            }
+        }
+
+        .header-column {
+            background-color: #f9f9f9;
+        }
+
+        & th,
+        & td {
+            width: 100%;
+            /* Ensure cells take full width */
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            height: 36px;
+            text-align: left;
+            white-space: nowrap;
+        }
+    }
+}
+
+
+.MuiSwitch-colorSecondary.Mui-checked+.MuiSwitch-track {
+    background-color: #43baff !important;
+}
